@@ -1,0 +1,34 @@
+HTML na prática
+
+*Ferramentas para desenvolvimento
+*VSCODE
+*NODEJS
+*INSPETOR
+
+*Tags e Elementos: 
+As tags são os marcadores que vão fazer o processo de identificação do conteúdo do código. Por exemplo, se quando o browser for interpretar o código ele encontrar a tag "h1", ele vai entender que aquele conteúdo é um título. 
+Na maior parte das vezes, uma tag tem duas parte: a tag de início e a tag de fim. Ambas começam com o sinal "<" (menor que), possuiem o nome da tag, e terminam com o sinal ">"(maior que). Contudo, a tag de fim possue uma barra "/" antes do caracter ">". 
+Exemplo: (imagem)
+
+
+
+
+
+*elementos:
+*Atributos das tags:
+
+*ESTRUTURA BÁSICA
+Um código HTML possui uma estrutura básica, que representa 3 secções marcadas por determinadas tags.
+  - Tag html:
+ Essa tag delimita o começo e o fim do código em HTML.
+  - Tag head:
+Do português 'cabeça', representa a parte do código que carrega antes de acontecer qualquer exibição na tela no usuário
+  - Tag body:
+É a secção que contém o código que aparece para o usuário.
+(imagem)
+
+
+
+*tags de texto
+*tag de lista
+

@@ -7,87 +7,74 @@
     <title>HTML</title>
 </head>
 <body>
-    <h1>Comunicação Web: conceitos iniciantes </h1>
+    <h1 id="index">Comunicação Web: conceitos iniciantes </h1>
     <hr>
     <fieldset>
-        <legend><h2>Índice:</h2></legend>
+        <legend>Índice:</legend>
             <ol>
-                <li>História da Web</li>
-                <li>Entendendo comunicação Client x Server</li>
-                <ul>
-                    <li>O que são Clients</li>
-                    <li>O que são Servers</li>
-                </ul>
-                <li>Linguagem de Programação</li>
-                <ul>
-                    <li>Server-Side</li>
-                    <li>Client-Side</li>
-                </ul>
-                <li>Introdução ao HTML na prática</li>
-                <li>Ferramentas de desenvolvimento</li>
-                <ul>
-                    <li>HTML: é uma Linguagem de Programação?</li>
-                    <li>Estrutura básica HTML</li>
-                    <li>Tags e atributos</li>
-                    <li>Tags: textos</li>
-                    <li>Tags: Listas</li>
-                    <li>Tags: links, navegação e ancoragem</li>
-                </ul>
+                <li>Fundamentos <sup><a href="#">1</a></sup></li>
+                <ol>
+                    <li><a href="#HistoriaWeb">História da Web</a></li>
+                    <li><a href="#NomesHistoria">Nomes da História da Web</a></li>
+                    <li><a href="#clients">Client ou Clientes</a></li>
+                    <li><a href="#server">Servidor</a></li>
+                    <li><a href="#host">Hospedagem de Site</a></li>
+                    <li><a href="#lingProg">Linguagem de Programação</a></li>
+                </ol>
+                <li>Introdução a Html <sup><a href="#">2</a></sup></li>
+                <ol>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ol>
+
+                   
             </ol>
     </fieldset>
-    <br
+    <br>
     <hr>
-
-    <h2><u>História da Web</u></h2>
+    <h2 id="HistoriaWeb"><u>História da Web</u></h2>
+    <small><a href="#index">(Voltar)</a></small>
     <p>O desenvolvimento da web foi uma consequência do progresso paralelo de dois dos elementos mais comuns em nossos dias: o <strong>computador</strong> e a <strong>internet</strong> E não supreendentemente, surgiram nos períodos em que mais comumente ouvimos sobre inovações tecnológica: durante a <i>Segunda Guerra Munidal(1939-1945)</i> e a <i>Guerra Fria (1947-1991)</i> . Assim, é preciso previamente entender a história dos computadores e o surgimento da internet para compreender o funcionamento da Web.</p>
     <h2>As Gerações dos Computadores</h2>
     <h3>Primeira Geração (1940)</h3>
     <p>Antes do desenvolvimento das primeiras máquinas, houve um trabalho massivo de homens e mulheres de teorias, cálculos e protótipos, até que em 1944, surgiu o primeiro computador, denominado <u><i>Harvard Mark I</i></u>.</p>
     <img src="https://cdn.britannica.com/93/23593-050-99D22EC5/Harvard-Mark-I-Howard-Aiken-ballistics-calculations-1943.jpg" width="350">
     <br><small>Harvard Mark I</small>
-
     <p>O computador em questão era uma máquina de cálculo complexos essencialmente mecânica, movida a válvulas e com um tamanho estrondoso (comparado com nossos modelos atuais).</p>
-
-    <p>Ainda nessa geração, mais especificamente nos anos de 1946, temos outras duas máquinas de destaque: o ENIAC, de origem americana, e o Colossus, de ascendência alemã.A primeira se destaca por sua funcionalidade de criptografia num contexto de intercepção da comunicação em guerra, e o segundo, se destaca pelos cálculos bélicos complexos. Inclusive, foi com a máquina americana que a Grace Hopper introduziu o termo <i>bug</i> na computação.</p>
-
     <p>Ainda nessa geração, mais especificamente nos anos de 1946, temos outras duas máquinas de destaque: O <u><i>Colossus</i></u>, de origem alemã, e o <u><i>ENIAC</i></u>, de ascendência americana.A primeira se destaca por sua funcionalidade em criptografia num contexto de intercepção de comunicação em guerra, e o segundo, se destaca pelos cálculos bélicos complexos. Inclusive, foi com a máquina americana que a programadora Grace Hopper introduziu o termo bug na computação.</p>
     <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=876&h=484&crop=1" alt="Foto do Computador ENIAC" width="350">  
     <br><small>ENIAC</small>
     </br>
     </br>
-
     <h3>Segunda Geração(1959-1965): Transístores</h3>
-    <p>Nessa geração as válvulas foram substituídas pelos transístores de modo que os computadores começaram a diminuir de tamanho.A título de exemplo, pode-se citar o <i><u>UNIVAC 1101</u></i>, que mesmo não sendo de dimensões comuns para nossos dias, já era um avanço para a época.</p>
+    <p>Nessa geração as válvulas foram substituídas pelos transístores de modo que os computadores começaram a diminuir de tamanho.A título de exemplo, pode-se citar o <i><u>UNIVAC 1101</u></i>, que mesmo não sendo de dimensões comuns para nossos dias, já era um avanço em termos de portabilidade.</p>
     <img src="https://s2.glbimg.com/qJK7RmowAGxYfIxAoZVnJXjKlKo=/0x0:695x488/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/5/S/9F0A8sRuOkq4UtBBStyg/2014-08-15-primeiro-computador-de-sucesso-com-transistores-o-univac-1101-ocupava-uma-sala-inteira.jpg" alt="Foto do computador UNIVAC 1101"width="350">
     <br><small>UNIVAC 1101</small>
     <br>
     <br>
-
     <h3>Terceira Geração(1965-1970): Circuitos Integrados </h3>
     <p>Foi durante esse período que nasceram os chips, compostos por transistor, capacitor e resistor. Isso possibilitou o aprimoramento do processamento da máquina e, mais uma vez, a redução do tamanho dos computadores. </p>
-
     <h3>Quarta geração (a partir de 1971)</h3>
     <p>Nessa geração os circuitos integrados são aprimorados e transformados em <strong>microprocessadores</strong>. Com a união desses elementos aos chips, pôde-se continuar o desenvolvimento da tecnologia, dando origem aos <i><strong>Personal Computers(PC)</strong></i>, ao <i>mouse</i>, ao <i>mobile</i>, e entre outros elementos muito conhecidos por nós atualmente.</p>
-
     <h3>Quinta geração</h3>
     <p>Apesar de não haver um consenso sobre quando essa era começa e se estamos vivendo-a ou não, sabe-se que pode-se atribuir a elas tecnologias como computadores quânticos, <u>Artificial Intelligence(AI)</u>, <u>metaverso</u> e <u>criptomoedas</u>.</p>
     <img src="https://portaldobitcoin.uol.com.br/wp-content/uploads/2019/10/42957291821_75bf56c746_k-1024x819.jpg" alt="Foto de Computadores quânticos" width="300">
     <br><small>Computadores quânticos</small>
     <br>
     <br>
-
     <h2>Como surgiu a internet?</h2>
     <p>Antes da desenvolvimento da internet o telégrafo era a máxima tecnologia de comunicação entre os seres humanos. Até que a Corrida Espacial, durante a Guerra Fria, fomentou o desenvolvimento de uma rede galáctica de computadores: a internet.</p>
-
     <h3>ARPANET</h3>
     <p>A inspiração da internet foi Joseph Carl(1780-1850), quem propôs a possibilidade de existir uma rede onde todos pudessem se comunicar. Em 1959, pela DARPA, a agência de defesa e pesquisa avançada dos Estados Unidos,  nasce a ARPANET, uma rede que conectava dois pontos, por onde aconteceu a primeira conexão e o tráfego de informação. Contudo, o dia que aconteceu a primeira conexão via internet, também aconteceu a primeira queda de conexão, já que da palavra enviada "login" só as letras "lo" chegaram em seu destino.</p>
-
     <h3>Aprimoramento: protocolo TCP/IP e WWW</h3>
     <p>Através dos informáticos Vinton Cerf(1943) e Robert Kahn(1938), a ARPANET pôde adotar o protocolo <i><strong>TCP/IP</strong></i>, que foi importante para começar um processo de estruturação da Internet e dos tráfegos de informação. Nessa época, muitas subredes estavam sendo criadas, e daí urgiu a necessidade de padroniza a internet e deixá-la mais acessível. Dessa forma, entra no cenário a colaboração do considerado o pai da internet, Tim Berners-Lee(1955), que utilizando do protocolo <i>TCP/IP</i> criou o <i>WWW(World Wide Web)</i> que trouxe a comunicação via <strong>hipertextp(http) e HTML</strong>.</p>
     <br>
     <br>
     <hr>
-    <h2>Grandes Nomes da História da Web</h2>
+
+    <h2 id="NomesHistoria"><u>Nomes da História da Web</u></h2>
+    <small><a href="#index">(Voltar)</a></small>
     <ol>
         <b><li>Grace Murray Hopper(1906-1992)</li></b>
         <br>
@@ -100,7 +87,6 @@
         </ul>
         <br>
         <br>
-
         <b><li>Joseph Licklider(1915-1990)</li></b>
         <br>
         <ul>
@@ -110,7 +96,6 @@
         </ul>
         <br>
         <br>
-
         <b><li>Tim Berners-Lee(1955)</li></b>
         <br>
         <ul>
@@ -123,7 +108,6 @@
         </ul>
         <br>
         <br>
-
         <b><li>Marc Andreessen(1971)</li></b>
         <br>
         <ul>
@@ -134,7 +118,6 @@
         </ul>
         <br>
         <br>
-
         <b><li>Bill Gates(1955)</li></b>
         <br>
         <ul>
@@ -145,7 +128,6 @@
         </ul>
         <br>
         <br>
-
         <b><li>Steve Jobs(1955)</li></b>
         <br>
         <ul>
@@ -159,7 +141,8 @@
     <hr>
 
     <br>
-    <h2>Clients (ou Clientes):</h2>
+    <h2 id="clients">Clients (ou Clientes):</h2>
+    <small><a href="#index">(Voltar)</a></small>
     <p>
         Os clientes são as máquinas consomem informação ao se concectar com outro computador, no contexto da Web, esse outro computador é o servidor da rede. Esse servidor vai enviar aos Clients arquivos do tipo HTML, CSS, JS e imagens.
     </p>
@@ -170,8 +153,7 @@
     <br><small>Comunicação entre client e server pela internet</small>
     <br>
     <br>
-
-    <h2>Browser(ou Navegador)</h2>
+    <h3>Browser(ou Navegador)</h3>
     <p>
         Os navegadores são programas instalados no dispositivo do <i>client </i>que interpreta os <u>arquivos recebido do servidor web</u>. Embora todos obedecam o padrão WWW, cada um deles tem sua particularidade na interpretação e no suporte de alguns recursos.
     </p>
@@ -179,8 +161,7 @@
     <br><small>Exemplo de browser/navegadores</small>
     <br>
     <br>
-    
-    <h2>Aplicação Web</h2>
+    <h3>Aplicação Web</h3>
     <p>
         Aplicação Web são soluções que possuem a <u>internet como meio de comunicação</u> entre Client e Server, <u>não sendo necessário a sua instalação no computador</u>
     </p>
@@ -194,7 +175,8 @@
     <br>
     <hr>
 
-    <h2>Server(ou Servidor) </h2>
+    <h2 id="server">Server(ou Servidor) </h2>
+    <small><a href="#index">(Voltar)</a></small>
     <p>
         Os server são computadores que se comportam como máquina central de uma rede, seja ela a internet, ou uma intranet. Eles vão desde computadores simples, até os grandes DataCenters da google ou do facebook.
         <img src="" alt="">
@@ -224,7 +206,6 @@
         Os conhecimentos sobre esse assunto é importante para saber a melhor opção para cada situação no que diz respeito a hospedagens de sites.  Qual o melhor servidor? Quanta memória de processamento é necessária? Assim por diante.
     </p>
     <br>
-    
     <h3>Tipos de servidores</h3>
     <ol>
         <b><li>Servidor Proxy</li></b>
@@ -261,5 +242,98 @@
         </p>  
     </ol>
     <hr>
+
+    <h2 id="host">Hospedagem de sites</h2>
+    <small><a href="#index">(Voltar)</a></small>
+    <p>
+        Para que os usuários possam acessar um site pela internet, é preciso fazer o processo de <b>Hospedagem do Site</b>, que é a ação de "colocar" num servidor web todos os arquivos do seu site para que ele possa fornecê-lo aos clients que fizerem a requisição. Segue um algoritmo do processo:
+    </p>
+    <ol>
+        <b><li>Escolher e Comprar um domínio</li></b>
+        <p>
+            O domínio é o nome do site,muito reconhecido pela estrutura <u>dominio.com</u> ou <u>dominio.com.br</u>. Quando o domínio possui o <i>.br</i> significa que ele é hospedado no Brasil, no site <a href="https://registro.br/" title="clique aqui para acessar o site" target="_blank">registro.br</a>.
+        </p>
+        <blockquote>
+            Antes de prosseguir, é importante distinguir a URL do dominio. A Url, é um conjunto de palavras que aponta todo o caminho para uma página específica da web. Enquanto o domínio aponta para "a porta de entrada" do site  (Página Inicial), a URL levará a um "quarto" específico, por exemplo, alguma das outras páginas dentro do site.
+            <br>
+            <br>
+            <img src="https://lh3.googleusercontent.com/pvTLX-M7DlkcHgLt_13J3uuHpd3-kKpZSlHFrhQiszLtn_f03GjDtH13lD1whzfLvVeDiEogt3QAwmDbBtTrtLaTO08fSQc40nUrxYYzrmrkIVUR2GukPglzxMchKvsHmksxJTTMwGhr6N4gMg" alt="Parte que compõe a URL" width="500" >
+        </blockquote>
+        <p>
+            Para comprá-lo é preciso visitar o site de uma plataforma que comercializa domínios, verificar se a opção de nome escolhido está disponível e escolher o plano. Alguns dados são requiridos, como o DNS, que é fornecido pela provedor de hospedagem. Caso não esteja disponível ainda, esse dado pode ser alterado  depois pelo mesmo site.
+        </p>
+        <br>
+        <b><li>Contratar serviço de hospedagem</li></b>
+        <p>
+            Para prosseguir nessa etapa é necessário escolher uma plataforma que forneça esse serviço, entrar no site, escolher um plano e fornecer os dados requiridos.
+        </p>
+        <br>
+        <b><li>Fazer o upgrade dos arquivos do site para o servidor:</li></b>
+        <p>
+            É necessário baixar o programa que realiza o FTP (File Transfer Protocol), isto é a conexão para enviar os arquivos ao servidor. Parar tanto, pode-se utilizar de programas como o <a href="https://filezilla-project.org/" target="_blank" title="clique aqui para acessa o site">Filezila</a>. Ao conectar-se, é só enviar(ou atualizar) os arquivos ao servidor
+        </p>
+    </ol>
+    <br>
+    <hr>
+    <br>
+
+    <h2 id="lingProg">Linguagens de Programação</h2>    
+    <small><a href="#index">(Voltar)</a></small>
+    <p>
+        As linguagens de programação são um conjunto de instruções lógicas que determinam atividades para o computador realizar. São elas que possibilitam o Software.
+    </p>
+    <h3>Client-side x Server-side</h3>
+    <p>
+        As linguagens que operam no <strong>Client-Side</strong> são aquelas que se comunicam com a máquina do cliente(ou usuário). Dessa forma, quem as interpreta é o browser.  São exemplos delas:
+    </p>
+    <ul>
+        <li>HTML;</li>
+        <li>Js;</li>
+        <li>Css.</li>
+    </ul>
+    <p>
+        Já as linguagens do <strong>Server-Side</strong>, elas são as que o servidor vai ler e executar.  São exemplos delas:
+    </p>
+    <ul>
+        <li>Php;</li>
+        <li>Js;</li>
+        <li>Java;</li>
+        <li>Ruby;</li>
+        <li>C#.</li>
+    </ul>
+    <p>
+        A linguagem <i>JavaScript</i>, por outro lado, é uma linguagem que opera nos dois lados, pois possui um interpretador e executador  específico que é o <strong>V8</strong> . Ele foi anexado nos navegadores, e através de <a href="https://nodejs.org/en/about" target="_blank" title="clique aqui para acessa o site" >Node.Js</a>(ambiente de execução do JavaScript), o V8 pode ser acessado pelos Severs também, possibilitando essa dupla atuação.
+    </p>
+    <br>
+    <h3>HTML é linguagem de programação?</h3>
+    <p>
+        Não! O HTML (<i>HyperText Markup Language</i> / Linguagem de marcação de texto e hyperlink), é uma linguagem de marcação de texto. É como se enviássemos uma mensagem em texto, e precisássemos dar orientação do que cada coisa escrita é, como o título, o parágrafo. Para tanto, o html faz uso das tags.
+    </p>
+    <img src="./Img/code.png" alt="Exemplo de um código HTML utilizando tags h1, h2, p, e img" width="500">
+    <hr>
+    <br>
+    <h1 id="htmlPratica">Introdução ao HTML na prática</h1>
+    <h3>Estruturação básica do Código</h3>
+    <p>Um código HTML possui uma estrutura básica, que representa 3 secções marcadas por determinadas tags.</p>
+    <ul>
+        <li><b>Tag HTML:</b> Essa tag delimita o começo e o fim do código em HTML.</li>
+        <li><b>Tag head:</b> Do português 'cabeça', representa a parte do código que carrega antes de acontecer qualquer exibição na tela no usuário.</li>
+        <li><b>Tag body:</b> É a secção que contém o código que aparece para o usuário.</li>
+    </ul>
+    <p>Segue uma demonstração. O conteúdo em azul são as tags, e o verde é o comentário do programa, isto é, conteúdo que o programador insere para auxiliar a compreensão do código, mas que não é lido pelo computador:</p>
+    <img src="./Img/codeEstrutura.png" alt="Demonstração das tags num código" width="500">
+    <h3>Tags HTML</h3>
+    <p>
+        As tags são os marcadores que vão fazer o processo de identificação do conteúdo do código. Por exemplo, se quando o browser for interpretar o código ele encontrar a tag "h1", ele vai entender que aquele conteúdo é um título. 
+    </p>
+    <p>
+        Na maior parte das vezes, uma tag tem duas parte: a tag de início e a tag de fim. Ambas começam com o sinal "<" (menor que), possuiem o nome da tag, e terminam com o sinal ">"(maior que). Contudo, a tag de fim possue uma barra "/" antes do caracter ">". 
+        Exemplo:
+    </p>
+    <img src="./Img/codeEstruturaTags.png" alt="Estrutura das Tags HTML" width="200">
+    <p>
+        Todavia, há exceções, que é o caso das tags únicas, que tem a estrutura de uma tag de início,ou seja, sem a barra. Exemplo: 
+    </p>
+    <img src="./Img/codeEstruturaTagsExceções.png" alt="Exemplo da estrutura de tags única"  width="200">
 </body>
 </html>
