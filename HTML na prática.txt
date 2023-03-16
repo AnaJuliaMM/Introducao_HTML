@@ -6,24 +6,30 @@ HTML na prática
 *INSPETOR
 
 
-
-
-
-*Atributos das tags:
-Os atributos são propriedades que as tags tem. Cada tag terá seu grupo de atributos compatível, mas existem três atributos que são padrão: "id", "style" e "class".Uma mesma tag pode ter um ou todos esses.
-
-O id é um identificador de um elemento.Através dele podemos controlar a tag qeu tem esse nome via JavaScript, por exemplo. 
-
-A class serve para padronização, pois todos os elementos que possuem uma mesma classe, receberão um mesmo grupo de característiccas, que podem ter sido definidas via CSS, por exemplo.
-
-E o atributo style é a possibilitade de estilizar um elemento(cor, tamanho, posição, etc). Dessa forma, realiza-se a função do CSS direto no HTML. Contudo, a título de boa prática, normalmente, prefere-se realizar a estilização CSS num arquivo a parte.  
-
-
-
-
-
-
-
 *tags de texto
+As tags de texto são as tags que exercem alguma função de marcação no conteúdo textual da página em HTML.
+Eles são: 
+1. Tags header:
+Estas são tags que definem títulos e eles variam de h1 a h6. Desse modo, elas possuem um tamanho maior que o parágrafo e são automaticamente exibidas em negrito.
+https://www.seoptimer.com/blog/wp-content/uploads/2018/09/header-tags-min.png
+
+2. Tag parágrafo:
+Esta tag delimita o início e o fim de um parágrafo.
+imagem
+
+3. Tag blockquote:
+Com essa tag pode-se realizar o destaque de uma parte do texto ao deixá-lo mais distante que os outros da margem. Utiliza-se essa função para fazer citações ou explicações que não se quer manter no parágrafo.
 *tag de lista
 
+4. Tags de destaque:
+    (imagem)
+    - negrito
+    (código)
+    - Itálico
+    - Sublinhado
+    - Marcador de Texto
+
+5. Tags de inscrição superior e inferior
+(imagem)
+    - inscrição superior;
+    -inscrição inferior
