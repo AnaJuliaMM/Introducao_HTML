@@ -8,29 +8,28 @@
 </head>
 <body>
     <h1 id="index">Comunicação Web: conceitos iniciantes </h1>
-    <hr>
-    <fieldset>
-        <legend>Índice:</legend>
+    <hr><br>
+    <p></p>
+        <ol>
+            <li>Fundamentos <sup><a href="#references" title="Referências">1</a></sup></li>
             <ol>
-                <li>Fundamentos <sup><a href="#">1</a></sup></li>
-                <ol>
-                    <li><a href="#HistoriaWeb">História da Web</a></li>
-                    <li><a href="#NomesHistoria">Nomes da História da Web</a></li>
-                    <li><a href="#clients">Client ou Clientes</a></li>
-                    <li><a href="#server">Servidor</a></li>
-                    <li><a href="#host">Hospedagem de Site</a></li>
-                    <li><a href="#lingProg">Linguagem de Programação</a></li>
-                </ol>
-                <li>Introdução a Html <sup><a href="#">2</a></sup></li>
-                <ol>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ol>
-
-                   
+                <li><a href="#HistoriaWeb">História da Web</a></li>
+                <li><a href="#NomesHistoria">Nomes da História da Web</a></li>
+                <li><a href="#clients">Client ou Clientes</a></li>
+                <li><a href="#server">Servidor</a></li>
+                <li><a href="#host">Hospedagem de Site</a></li>
+                <li><a href="#lingProg">Linguagem de Programação</a></li>
             </ol>
-    </fieldset>
+            <li>Introdução a Html <sup><a href="#references">2</a></sup></li>
+            <ol>
+                <li><a href="#htmlPratica">Conceitos Iniciais</a></li>
+                <li><a href="#TagsTexto"> Tags de Texto</a></li>
+                <li><a href="#TagsListas">Tags de Listas</a></li>
+                <li><a href="#TagsAncoragem">Tags de Ancoragem</a></li>
+                <li><a href="#tools">Ferramenta de desenvolvimento</a></li>
+                <li><a href="#references">Referências</a></li>
+            </ol>
+        </ol>
     <br>
     <hr>
     <h2 id="HistoriaWeb"><u>História da Web</u></h2>
@@ -283,7 +282,7 @@
         As linguagens de programação são um conjunto de instruções lógicas que determinam atividades para o computador realizar. São elas que possibilitam o Software.
     </p>
     <br>
-    <h3>Client-side x Server-side</h3>
+    <h3>Client-side x Server-side </h3>
     <p>
         As linguagens que operam no <strong>Client-Side</strong> são aquelas que se comunicam com a máquina do cliente(ou usuário). Dessa forma, quem as interpreta é o browser.  São exemplos delas:
     </p>
@@ -306,16 +305,17 @@
         A linguagem <i>JavaScript</i>, por outro lado, é uma linguagem que opera nos dois lados, pois possui um interpretador e executador  específico que é o <strong>V8</strong> . Ele foi anexado nos navegadores, e através de <a href="https://nodejs.org/en/about" target="_blank" title="clique aqui para acessa o site" >Node.Js</a>(ambiente de execução do JavaScript), o V8 pode ser acessado pelos Severs também, possibilitando essa dupla atuação.
     </p>
     <br>
-    <h3>HTML é linguagem de programação?</h3>
+    <h3>HTML <del>é uma</del> <ins>não é uma</ins> linguagem de programação</h3>
     <p>
-        Não! O HTML (<i>HyperText Markup Language</i> / Linguagem de marcação de texto e hyperlink), é uma linguagem de marcação de texto. É como se enviássemos uma mensagem em texto, e precisássemos dar orientação do que cada coisa escrita é, como o título, o parágrafo. Para tanto, o html faz uso das tags.
+        Não! O <abbr title="HyperText Markup Language">HTML</abbr> (Linguagem de marcação de texto e hyperlink), é uma linguagem de marcação de texto. É como se enviássemos uma mensagem em texto, e precisássemos dar orientação do que cada coisa escrita é, como o título, o parágrafo. Para tanto, o html faz uso das tags.
     </p>
     <img src="./Img/code.png" alt="Exemplo de um código HTML utilizando tags h1, h2, p, e img" width="500">
     <br><br>
     <hr>
     <br>
 
-    <h1 id="htmlPratica">Introdução ao HTML na prática</h1>
+    <h1 id="htmlPratica">Introdução ao HTML na prática: conceitos</h1>
+    <small><a href="#index">(Voltar)</a></small>
     <h3>Estruturação básica do Código</h3>
     <p>Um código HTML possui uma estrutura básica, que representa 3 secções marcadas por determinadas tags.</p>
     <ul>
@@ -369,7 +369,9 @@
     <br>
     <hr>
 
-    <h2>Exemplo de Tags</h3>
+    <h1 id="TagsTexto">Exemplo de Tags</h1>
+    <small><a href="#index">(Voltar)</a></small>
+
     <h3>Tags de Texto</h3>
     <p>
         As tags de texto são as tags que exercem alguma função de marcação no conteúdo textual da página HTML.
@@ -464,8 +466,58 @@
             <img src="./Img/hrExmplo.png" width="500"><br><br>   
         </li>
     </ol>
-
-
-
+    <br>
+    <hr>
+    <h3 id="TagsListas">Tags de Lista</h3>
+    <small><a href="#index">(Voltar)</a></small>
+    <p>
+        São tags utilizadas para realizar áreas dedicadas à lista. Existem dois tipos de tags de listas, e ambas possuem a tag "pai", que  delimita a lista, e a tag "filha", que aponta os itens.
+        A primeira pode variar, mas a segunda será sempre </ li > .
+    </p>
+    <img src="./Img/Exmplo listas.png" alt="Exemplo de listas HTML" width="200">
+    <p>Tipos:</p>
+    <ul>
+        <li>
+            <b>Lista Ordenada</b>
+            <p>Como o próprio nome diz, essa é uma lista em que os itens são organizados numa sequência numérica.</p>
+            <img src="./Img/listaOL.png" alt="" width="300">
+        </li>
+        <br>
+        <li>
+            <b>Lista não Ordenada</b>
+            <p>Essa é uma lista em que os itens não são organizados por numérica, mas por símbolos.</p>
+            <img src="./Img/listaUL.png" alt="" width="300">
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <h2 id="TagsAncoragem">Tag de Navegação e Ancoragem </h2>
+    <small><a href="#index">(Voltar)</a></small>
+    <p>
+        As tags de ancoragem permitem agregar navegação para o site. Através do atributo "href= 'destino'", podemos direcionar o usuário para um outro site ou outra parte do nosso site. O que difere essas duas ações é a sintaxe do código, quando insere-se um "#" na frente do destino, o navegador entede que permanecerá na mesma página, apenas levará à outra secção.
+    </p>
+    <br>
+    <img src="./Img/ancoragem.png" alt="Código de ancoragem" width="500">
+    <h3>Atributos da tag < a ></h3>
+    <ul>
+        <li><u>href</u> : é onde decide-se o destino</li>
+        <li><u>target:</u> decide-se se o destino será aberto em outra guia ("_blank") ou nele mesmo ("_self"), que é o padrão"</li>
+        <li><u>title:</u> define a existência de um balão de diálogo contendo extras informações<a id="exemplo" href="#exemplo"title="Pode estar escrito 'Clique aqui', por exemplo"> Coloque seu cursor aqui para ver</a></li>
+    </ul><br>
+    <hr>
+    <h2 id="tools">Ferramentas do desenvolvedor</h2>
+    <small><a href="#index">(Voltar)</a></small>
+    <ul>
+        <li><strong>IDE:</strong> é a interface de desenvolvimento de um código. Exemplo: <abbr title="Visual studio code">VSCODE</abbr>
+        <li><strong>Extensões:</strong>são ferramentas que instalamos para agregar ao funcionamento da IDE. Exemplo: Live Server no VSCODE</li>
+        <li><strong>Inspetor:</strong> É uma ferramenta dos navegadores aonde você pode estudar um site de terceiro vendo quais tags HTML foram utilizadas, alterando algo (não definitivamente), e vendo as estilizações em CSS.</li>
+    </ul>
+    <br>
+    <br>
+    <hr>
+    <h2 id="references">Referências</h2>
+    <small><a href="#index">(Voltar)</a></small>
+    <p><sup>1</sup><a target="_blank" href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/ac583eab-c0fc-41a2-9725-e075c3937044?back=/track/formacao-html-web-developer&tab=undefined&moduleId=undefined">Curso DIO Entendendo comunicação Client x Server</a></p>
+    <p><sup>2</sup><a target="_blank" href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/ac583eab-c0fc-41a2-9725-e075c3937044?back=/track/formacao-html-web-developer&tab=undefined&moduleId=undefined">Curso DIO Introdução ao HTML na prática</a></p>
 </body>
 </html>

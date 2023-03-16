@@ -5,31 +5,3 @@ HTML na prática
 *NODEJS
 *INSPETOR
 
-
-*tags de texto
-As tags de texto são as tags que exercem alguma função de marcação no conteúdo textual da página em HTML.
-Eles são: 
-1. Tags header:
-Estas são tags que definem títulos e eles variam de h1 a h6. Desse modo, elas possuem um tamanho maior que o parágrafo e são automaticamente exibidas em negrito.
-https://www.seoptimer.com/blog/wp-content/uploads/2018/09/header-tags-min.png
-
-2. Tag parágrafo:
-Esta tag delimita o início e o fim de um parágrafo.
-imagem
-
-3. Tag blockquote:
-Com essa tag pode-se realizar o destaque de uma parte do texto ao deixá-lo mais distante que os outros da margem. Utiliza-se essa função para fazer citações ou explicações que não se quer manter no parágrafo.
-*tag de lista
-
-4. Tags de destaque:
-    (imagem)
-    - negrito
-    (código)
-    - Itálico
-    - Sublinhado
-    - Marcador de Texto
-
-5. Tags de inscrição superior e inferior
-(imagem)
-    - inscrição superior;
-    -inscrição inferior
