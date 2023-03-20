@@ -5,519 +5,540 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 <body>
-    <h1 id="index">Comunicação Web: conceitos iniciais </h1>
-    <hr><br>
-    <p><mark>Índice</mark></p>
-        <ol>
-            <li>Fundamentos <sup><a href="#references" title="Referências">1</a></sup></li>
-            <ol>
-                <li><a href="#HistoriaWeb">História da Web</a></li>
-                <li><a href="#NomesHistoria">Nomes da História da Web</a></li>
-                <li><a href="#clients">Client ou Clientes</a></li>
-                <li><a href="#server">Servidor</a></li>
-                <li><a href="#host">Hospedagem de Site</a></li>
-                <li><a href="#lingProg">Linguagem de Programação</a></li>
-            </ol>
-            <li>Introdução a Html <sup><a href="#references">2</a></sup></li>
-            <ol>
-                <li><a href="#htmlPratica">Conceitos Iniciais</a></li>
-                <li><a href="#TagsTexto"> Tags de Texto</a></li>
-                <li><a href="#TagsListas">Tags de Listas</a></li>
-                <li><a href="#TagsAncoragem">Tags de Ancoragem</a></li>
-                <li><a href="#tools">Ferramenta de desenvolvimento</a></li>
-                <li><a href="#references">Referências</a></li>
-            </ol>
+    <header id="index">
+        <h1 >Comunicação Web: conceitos iniciais </h1>
+    </header>
+    <nav>
+        <fieldset>
+        <legend>Índice</legend>
+        <ol class="lista1">
+            <div>
+                <li>Fundamentos <sup><a href="#references" title="Referências" title="Acesse a referências desse conteúdo">1</a></sup></li>
+                <ol>
+                    <li><a href="#HistoriaWeb" title="Acesse o setor História da Web">História da Web</a></li>
+                    <li><a href="#NomesHistoria" title="Acesse o setor Nomes importantes">Nomes da História da Web</a></li>
+                    <li><a href="#clients" title="Acesse o setor Client">Client ou Clientes</a></li>
+                    <li><a href="#server" title="Acesse o setor servidor">Servidor ou Server</a></li>
+                    <li><a href="#host" title="Acesse O setor Hospedagem de Site">Hospedagem de Site</a></li>
+                    <li><a href="#lingProg" title="Acesse O setor Linguagem de Programação">Linguagem de Programação</a></li>
+                </ol>
+            </div>
+            <div>
+                <li>Introdução a Html <sup><a href="#references"  title="Acesse a referências desse conteúdo">2</a></sup></li>
+                <ol>
+                    <li><a href="#htmlPratica" title="Acesse o setor conceito iniciais">Conceitos Iniciais</a></li>
+                    <li><a href="#TagsTexto" title="Acesse o setor tags de texto"> Tags de Texto</a></li>
+                    <li><a href="#TagsListas" title="Acesse o setor tags de listas">Tags de Listas</a></li>
+                    <li><a href="#TagsAncoragem" title="Acesse o setor tags de ancoragem">Tags de Ancoragem</a></li>
+                    <li><a href="#tools"  title="Acesse o setor ferramente de desenvolvimento">Ferramenta de desenvolvimento</a></li>
+                    <li><a href="#references" title="Acesse o setor referências">Referências</a></li>
+                </ol>
+            </div>
         </ol>
-    <br>
+        </fieldset>
+        <div class="apresentacao">
+            <p>
+                Primeiro desafio do <a href="https://web.dio.me/track/formacao-html-web-developer" target="_blank" title="Clique aqui para acessar o curso">Bootcamp HTML web developer</a>, da <abbr title="Digital Innovation One">DIO</abbr> , ministrado pelo professor <a href="https://www.linkedin.com/in/diogomainardes" target="_blank" title="Acesse o linkedin do professor">Diogo Mainardes.</a> O objetivo é conter um resumo de cada aula do primeiro módulo, a fim de treinar o uso de HTML e suas tags de estruturação. <br>Contudo, essa última versão possuí atualizações de estilização e semância, clique <a href="./ProjetoIntroducaoHTM1/index.html" target="_blank" title="Clique aqui para acessar a versão 1 do projeto">aqui</a> para ver a primeira versão.
+            </p>
+            <details>
+                <summary>Acesse meu certificado</summary>
+                <a href="https://www.dio.me/certificate/EE9813FB/share" title="Acesse meu certificado de conclusão do curso" target="_blank">Certificado</a>
+            </details>
+        </div>
+    </nav>
+    <main>
+    <section>
+        <h2 id="HistoriaWeb"><u>História da Web</u></h2>
+        <small><a href="#index">(Voltar)</a></small>
+        <p>O desenvolvimento da web foi uma consequência do progresso paralelo de dois dos elementos mais comuns em nossos dias: o <strong>computador</strong> e a <strong>internet</strong> E não supreendentemente, surgiram nos períodos em que mais comumente ouvimos sobre inovações tecnológica: durante a <i>Segunda Guerra Munidal(1939-1945)</i> e a <i>Guerra Fria (1947-1991)</i> . Assim, é preciso previamente entender a história dos computadores e o surgimento da internet para compreender o funcionamento da Web.</p>
+        <h2>As Gerações dos Computadores</h2>
+        <h3>Primeira Geração (1940)</h3>
+        <p>Antes do desenvolvimento das primeiras máquinas, houve um trabalho massivo de homens e mulheres de teorias, cálculos e protótipos, até que em 1944, surgiu o primeiro computador, denominado <u><i>Harvard Mark I</i></u>.</p>
+        <img src="https://cdn.britannica.com/93/23593-050-99D22EC5/Harvard-Mark-I-Howard-Aiken-ballistics-calculations-1943.jpg" width="350">
+        <br><small>Harvard Mark I</small>
+        <p>O computador em questão era uma máquina de cálculo complexos essencialmente mecânica, movida a válvulas e com um tamanho estrondoso (comparado com nossos modelos atuais).</p>
+        <p>Ainda nessa geração, mais especificamente nos anos de 1946, temos outras duas máquinas de destaque: O <u><i>Colossus</i></u>, de origem alemã, e o <u><i>ENIAC</i></u>, de ascendência americana.A primeira se destaca por sua funcionalidade em criptografia num contexto de intercepção de comunicação em guerra, e o segundo, se destaca pelos cálculos bélicos complexos. Inclusive, foi com a máquina americana que a programadora Grace Hopper introduziu o termo bug na computação.</p>
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=876&h=484&crop=1" alt="Foto do Computador ENIAC" width="350">  
+        <br><small>ENIAC</small>
+        </br>
+        </br>
+        <h3>Segunda Geração(1959-1965): Transístores</h3>
+        <p>Nessa geração as válvulas foram substituídas pelos transístores de modo que os computadores começaram a diminuir de tamanho.A título de exemplo, pode-se citar o <i><u>UNIVAC 1101</u></i>, que mesmo não sendo de dimensões comuns para nossos dias, já era um avanço em termos de portabilidade.</p>
+        <img src="https://s2.glbimg.com/qJK7RmowAGxYfIxAoZVnJXjKlKo=/0x0:695x488/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/5/S/9F0A8sRuOkq4UtBBStyg/2014-08-15-primeiro-computador-de-sucesso-com-transistores-o-univac-1101-ocupava-uma-sala-inteira.jpg" alt="Foto do computador UNIVAC 1101"width="350">
+        <br><small>UNIVAC 1101</small>
+        <br>
+        <br>
+        <h3>Terceira Geração(1965-1970): Circuitos Integrados </h3>
+        <p>Foi durante esse período que nasceram os chips, compostos por transistor, capacitor e resistor. Isso possibilitou o aprimoramento do processamento da máquina e, mais uma vez, a redução do tamanho dos computadores. </p>
+        <h3>Quarta geração (a partir de 1971)</h3>
+        <p>Nessa geração os circuitos integrados são aprimorados e transformados em <strong>microprocessadores</strong>. Com a união desses elementos aos chips, pôde-se continuar o desenvolvimento da tecnologia, dando origem aos <i><strong>Personal Computers(PC)</strong></i>, ao <i>mouse</i>, ao <i>mobile</i>, e entre outros elementos muito conhecidos por nós atualmente.</p>
+        <h3>Quinta geração</h3>
+        <p>Apesar de não haver um consenso sobre quando essa era começa e se estamos vivendo-a ou não, sabe-se que pode-se atribuir a elas tecnologias como computadores quânticos, <u>Artificial Intelligence(AI)</u>, <u>metaverso</u> e <u>criptomoedas</u>.</p>
+        <img src="https://portaldobitcoin.uol.com.br/wp-content/uploads/2019/10/42957291821_75bf56c746_k-1024x819.jpg" alt="Foto de Computadores quânticos" width="300">
+        <br><small>Computadores quânticos</small>
+    </section>
     <hr>
-    <h2 id="HistoriaWeb"><u>História da Web</u></h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <p>O desenvolvimento da web foi uma consequência do progresso paralelo de dois dos elementos mais comuns em nossos dias: o <strong>computador</strong> e a <strong>internet</strong> E não supreendentemente, surgiram nos períodos em que mais comumente ouvimos sobre inovações tecnológica: durante a <i>Segunda Guerra Munidal(1939-1945)</i> e a <i>Guerra Fria (1947-1991)</i> . Assim, é preciso previamente entender a história dos computadores e o surgimento da internet para compreender o funcionamento da Web.</p>
-    <h2>As Gerações dos Computadores</h2>
-    <h3>Primeira Geração (1940)</h3>
-    <p>Antes do desenvolvimento das primeiras máquinas, houve um trabalho massivo de homens e mulheres de teorias, cálculos e protótipos, até que em 1944, surgiu o primeiro computador, denominado <u><i>Harvard Mark I</i></u>.</p>
-    <img src="https://cdn.britannica.com/93/23593-050-99D22EC5/Harvard-Mark-I-Howard-Aiken-ballistics-calculations-1943.jpg" width="350">
-    <br><small>Harvard Mark I</small>
-    <p>O computador em questão era uma máquina de cálculo complexos essencialmente mecânica, movida a válvulas e com um tamanho estrondoso (comparado com nossos modelos atuais).</p>
-    <p>Ainda nessa geração, mais especificamente nos anos de 1946, temos outras duas máquinas de destaque: O <u><i>Colossus</i></u>, de origem alemã, e o <u><i>ENIAC</i></u>, de ascendência americana.A primeira se destaca por sua funcionalidade em criptografia num contexto de intercepção de comunicação em guerra, e o segundo, se destaca pelos cálculos bélicos complexos. Inclusive, foi com a máquina americana que a programadora Grace Hopper introduziu o termo bug na computação.</p>
-    <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=876&h=484&crop=1" alt="Foto do Computador ENIAC" width="350">  
-    <br><small>ENIAC</small>
-    </br>
-    </br>
-    <h3>Segunda Geração(1959-1965): Transístores</h3>
-    <p>Nessa geração as válvulas foram substituídas pelos transístores de modo que os computadores começaram a diminuir de tamanho.A título de exemplo, pode-se citar o <i><u>UNIVAC 1101</u></i>, que mesmo não sendo de dimensões comuns para nossos dias, já era um avanço em termos de portabilidade.</p>
-    <img src="https://s2.glbimg.com/qJK7RmowAGxYfIxAoZVnJXjKlKo=/0x0:695x488/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/5/S/9F0A8sRuOkq4UtBBStyg/2014-08-15-primeiro-computador-de-sucesso-com-transistores-o-univac-1101-ocupava-uma-sala-inteira.jpg" alt="Foto do computador UNIVAC 1101"width="350">
-    <br><small>UNIVAC 1101</small>
-    <br>
-    <br>
-    <h3>Terceira Geração(1965-1970): Circuitos Integrados </h3>
-    <p>Foi durante esse período que nasceram os chips, compostos por transistor, capacitor e resistor. Isso possibilitou o aprimoramento do processamento da máquina e, mais uma vez, a redução do tamanho dos computadores. </p>
-    <h3>Quarta geração (a partir de 1971)</h3>
-    <p>Nessa geração os circuitos integrados são aprimorados e transformados em <strong>microprocessadores</strong>. Com a união desses elementos aos chips, pôde-se continuar o desenvolvimento da tecnologia, dando origem aos <i><strong>Personal Computers(PC)</strong></i>, ao <i>mouse</i>, ao <i>mobile</i>, e entre outros elementos muito conhecidos por nós atualmente.</p>
-    <h3>Quinta geração</h3>
-    <p>Apesar de não haver um consenso sobre quando essa era começa e se estamos vivendo-a ou não, sabe-se que pode-se atribuir a elas tecnologias como computadores quânticos, <u>Artificial Intelligence(AI)</u>, <u>metaverso</u> e <u>criptomoedas</u>.</p>
-    <img src="https://portaldobitcoin.uol.com.br/wp-content/uploads/2019/10/42957291821_75bf56c746_k-1024x819.jpg" alt="Foto de Computadores quânticos" width="300">
-    <br><small>Computadores quânticos</small>
-    <br>
-    <br>
-    <h2>Como surgiu a internet?</h2>
-    <p>Antes da desenvolvimento da internet o telégrafo era a máxima tecnologia de comunicação entre os seres humanos. Até que a Corrida Espacial, durante a Guerra Fria, fomentou o desenvolvimento de uma rede galáctica de computadores: a internet.</p>
-    <h3>ARPANET</h3>
-    <p>A inspiração da internet foi Joseph Carl(1780-1850), quem propôs a possibilidade de existir uma rede onde todos pudessem se comunicar. Em 1959, pela DARPA, a agência de defesa e pesquisa avançada dos Estados Unidos,  nasce a ARPANET, uma rede que conectava dois pontos, por onde aconteceu a primeira conexão e o tráfego de informação. Contudo, o dia que aconteceu a primeira conexão via internet, também aconteceu a primeira queda de conexão, já que da palavra enviada "login" só as letras "lo" chegaram em seu destino.</p>
-    <h3>Aprimoramento: protocolo TCP/IP e WWW</h3>
-    <p>Através dos informáticos Vinton Cerf(1943) e Robert Kahn(1938), a ARPANET pôde adotar o protocolo <i><strong>TCP/IP</strong></i>, que foi importante para começar um processo de estruturação da Internet e dos tráfegos de informação. Nessa época, muitas subredes estavam sendo criadas, e daí urgiu a necessidade de padroniza a internet e deixá-la mais acessível. Dessa forma, entra no cenário a colaboração do considerado o pai da internet, Tim Berners-Lee(1955), que utilizando do protocolo <i>TCP/IP</i> criou o <i>WWW(World Wide Web)</i> que trouxe a comunicação via <strong>hipertextp(http) e HTML</strong>.</p>
-    <br>
-    <br>
+    <section>
+        <h2>Como surgiu a internet?</h2>
+        <small><a href="#index">(Voltar)</a></small>
+        <p>Antes da desenvolvimento da internet o telégrafo era a máxima tecnologia de comunicação entre os seres humanos. Até que a Corrida Espacial, durante a Guerra Fria, fomentou o desenvolvimento de uma rede galáctica de computadores: a internet.</p>
+        <h3>ARPANET</h3>
+        <p>A inspiração da internet foi Joseph Carl(1780-1850), quem propôs a possibilidade de existir uma rede onde todos pudessem se comunicar. Em 1959, pela DARPA, a agência de defesa e pesquisa avançada dos Estados Unidos,  nasce a ARPANET, uma rede que conectava dois pontos, por onde aconteceu a primeira conexão e o tráfego de informação. Contudo, o dia que aconteceu a primeira conexão via internet, também aconteceu a primeira queda de conexão, já que da palavra enviada "login" só as letras "lo" chegaram em seu destino.</p>
+        <h3>Aprimoramento: protocolo TCP/IP e WWW</h3>
+        <p>Através dos informáticos Vinton Cerf(1943) e Robert Kahn(1938), a ARPANET pôde adotar o protocolo <i><strong>TCP/IP</strong></i>, que foi importante para começar um processo de estruturação da Internet e dos tráfegos de informação. Nessa época, muitas subredes estavam sendo criadas, e daí urgiu a necessidade de padroniza a internet e deixá-la mais acessível. Dessa forma, entra no cenário a colaboração do considerado o pai da internet, Tim Berners-Lee(1955), que utilizando do protocolo <i>TCP/IP</i> criou o <i>WWW(World Wide Web)</i> que trouxe a comunicação via <strong>hipertextp(http) e HTML</strong>.</p>
+    </section>
     <hr>
-
-    <h2 id="NomesHistoria"><u>Nomes da História da Web</u></h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <ol>
-        <b><li>Grace Murray Hopper(1906-1992)</li></b>
-        <br>
-        <ul>
-            <li>Umas das primeiras programadoras do MARK I;</li>
-            <li> Criou a linguagem Programação Flow-Matic, base do COBOL;</li>
-            <li>Termo bug na computação;</li>
-            <br>
-            <img src="https://th.bing.com/th/id/R.f7076f4abad98c8b88f9902635470bb0?rik=GeFRuap%2b45TFeA&riu=http%3a%2f%2fwww.thefamouspeople.com%2fprofiles%2fimages%2fgrace-hopper-2.jpg&ehk=vlW9FjHKXlrtGLQxnH1UrCRvnjx9Fajq1bha7nUyIBA%3d&risl=&pid=ImgRaw&r=0" alt="Foto da Grace Hopper" width="250">
-        </ul>
-        <br>
-        <br>
-        <b><li>Joseph Licklider(1915-1990)</li></b>
-        <br>
-        <ul>
-            <li>Idealizou a Internet, com sua proposta de uma rede galáctica de computadores;</li>
-            <br>
-            <img src="https://i.pinimg.com/originals/1f/17/9f/1f179fa99c22d102b28adf8b63d99254.jpg" alt="Foto da Joseph Licklider(1915-1990)" width="200">
-        </ul>
-        <br>
-        <br>
-        <b><li>Tim Berners-Lee(1955)</li></b>
-        <br>
-        <ul>
-            <li>criou o WWW;</li>
-            <li>Transformou a internet para como conhecemos hoje;</li>
-            <li>Popularizou http e o html;</li>
-            <li>Diretor da W3C (grupo padronizador da internet);</li>
-            <br>
-            <img  src="https://ichef.bbci.co.uk/images/ic/1280xn/p025m2fq.jpg" alt="Foto de Tim Berners-Lee(1955)" width="200">
-        </ul>
-        <br>
-        <br>
-        <b><li>Marc Andreessen(1971)</li></b>
-        <br>
-        <ul>
-            <li>Reiventou o navegador: Netscape (90% da internet da época);</li>
-        <li>Proporcionou recursos multimedia para a internet;</li>
-            <br>
-            <img src="https://blogs-images.forbes.com/anthonykosner/files/2012/04/10712v2-max-450x450.png" alt="Foto de Marc Andreessen(1971)" width="200">
-        </ul>
-        <br>
-        <br>
-        <b><li>Bill Gates(1955)</li></b>
-        <br>
-        <ul>
-            <li>Fundados da Microsoft;</li>
-            <li>Criou o Internet Explorer(substituiu o Netscape);</li>
-            <br>
-            <img src="https://th.bing.com/th/id/OIP.ffiBrvtwBS3Fn1PYQjLpqgHaFj?pid=ImgDet&rs=1" alt="Foto de Bill Gates(1955)" width="250">
-        </ul>
-        <br>
-        <br>
-        <b><li>Steve Jobs(1955)</li></b>
-        <br>
-        <ul>
-            <li>Fundados da Apple;</li>
-            <li>Introduziu o mouse;</li>
-            <li>Popularizou os smartphone(2007);</li>
-            <br>
-            <img src="https://th.bing.com/th/id/OIP.BwynLPcPYvfAOjamc1sgKQHaFj?pid=ImgDet&rs=1" alt="Foto de Marc Andreessen(1971)" width="250">
-        </ul>
-    </ol>
-    <hr>
-
-    <br>
-    <h2 id="clients">Clients (ou Clientes):</h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <p>
-        Os clientes são as máquinas consomem informação ao se concectar com outro computador, no contexto da Web, esse outro computador é o servidor da rede. Esse servidor vai enviar aos Clients arquivos do tipo HTML, CSS, JS e imagens.
-    </p>
-    <blockquote>
-        As máquinas dos clientes pode variar entre <i>desktop, laptop,mobile phone, tablets, smartwatches,</i> e entre outros, que se dividem em dispositivos desktop, ou seja, <b>não portáteis</b>, e <b>dispositivos móveis</b>, os portáteis, aqueles que vem sido utilizados cada vez mais nos dias de hoje.
-    </blockquote>
-    <img src="https://indiafreenotes.com/wp-content/uploads/2020/04/Topic-2-Client-Server-Computing.png" alt="Diagrama de como funciona a comunicação entre client e server pela internet" width="500">
-    <br><small>Comunicação entre client e server pela internet</small>
-    <br>
-    <br>
-    <h3>Browser(ou Navegador)</h3>
-    <p>
-        Os navegadores são programas instalados no dispositivo do <i>client </i>que interpreta os <u>arquivos recebido do servidor web</u>. Embora todos obedecam o padrão WWW, cada um deles tem sua particularidade na interpretação e no suporte de alguns recursos.
-    </p>
-    <img src="https://4.bp.blogspot.com/-1NTACcH7wEE/UYw-ey-6WUI/AAAAAAAAo6I/UoQMVWp7quo/w1200-h630-p-k-no-nu/navegadores.png" alt="Exemplo de browser/navegadores" width="200">
-    <br><small>Exemplo de browser/navegadores</small>
-    <br>
-    <br>
-    <h3>Aplicação Web</h3>
-    <p>
-        Aplicação Web são soluções que possuem a <u>internet como meio de comunicação</u> entre Client e Server, <u>não sendo necessário a sua instalação no computador</u>
-    </p>
-    <blockquote>
-        Em outras palavras, aplicação web é o website, enquanto os aplicativos, são uma solução que necessita instalação.
-    </blockquote>
-    <p>
-        Os conhecimentos e a programação para aplicação web é esencialmente diferente do desenvolvimento de aplicativos. Assim sendo, aidna que as informações contida num site e num app sejam as mesmas, ambas as estruturas tem particularidades entre si. 
-    </p>
-    <br>
-    <br>
-    <hr>
-
-    <h2 id="server">Server(ou Servidor) </h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <p>
-        Os server são computadores que se comportam como máquina central de uma rede, seja ela a internet, ou uma intranet. Eles vão desde computadores simples, até os grandes DataCenters da google ou do facebook.
-        <img src="" alt="">
-    </p>
-    <br>
-    <h3>Hardware e Software dos Servidores</h3>
-    <p>
-        Assim como os computadores que conhecemos, os servidores possuem a parte lógica (Software) e parte física(hardware). A primeira parte é responsável pelos sistemas operacionais, monitoramento e servidores Web, enquanto a segunda, se trata do armazenamento, memória e processamento, sendo que esse precisa ser compatível com as grandes demanda que um servidor tem.
-    </p>
-    <p>
-        Em aplicações web, quando o client/cliente acessa um site ele faz uma requisição ao servidor. Quando o server recebe essa mensagem via internet, é o sistema operacional que vai recebê-la e ao identificá-la,ele busca no servidor Web o fornecimento dos arquivos do site (html, css, js, etc).Assim que ele feito a comunicação, o sistema operacional manda para o client o pedido que ele fez.
-    </p>
-    <blockquote>
-        <u>Exemplos Sistemas Operacionais:</u>
+    <section>
+        <h2 id="NomesHistoria"><u>Nomes da História da Web</u></h2>
+        <small><a href="#index">(Voltar)</a></small>
         <ol>
-            <li>Window Server;</li>
-            <li>Oracle;</li>
+            <b><li>Grace Murray Hopper(1906-1992)</li></b>
+            <br>
+            <ul>
+                <li>Umas das primeiras programadoras do MARK I;</li>
+                <li> Criou a linguagem Programação Flow-Matic, base do COBOL;</li>
+                <li>Termo bug na computação;</li>
+                <br>
+                <img src="https://th.bing.com/th/id/R.f7076f4abad98c8b88f9902635470bb0?rik=GeFRuap%2b45TFeA&riu=http%3a%2f%2fwww.thefamouspeople.com%2fprofiles%2fimages%2fgrace-hopper-2.jpg&ehk=vlW9FjHKXlrtGLQxnH1UrCRvnjx9Fajq1bha7nUyIBA%3d&risl=&pid=ImgRaw&r=0" alt="Foto da Grace Hopper" width="250">
+            </ul>
+            <br>
+            <br>
+            <b><li>Joseph Licklider(1915-1990)</li></b>
+            <br>
+            <ul>
+                <li>Idealizou a Internet, com sua proposta de uma rede galáctica de computadores;</li>
+                <br>
+                <img src="https://i.pinimg.com/originals/1f/17/9f/1f179fa99c22d102b28adf8b63d99254.jpg" alt="Foto da Joseph Licklider(1915-1990)" width="200">
+            </ul>
+            <br>
+            <br>
+            <b><li>Tim Berners-Lee(1955)</li></b>
+            <br>
+            <ul>
+                <li>criou o WWW;</li>
+                <li>Transformou a internet para como conhecemos hoje;</li>
+                <li>Popularizou http e o html;</li>
+                <li>Diretor da W3C (grupo padronizador da internet);</li>
+                <br>
+                <img  src="https://ichef.bbci.co.uk/images/ic/1280xn/p025m2fq.jpg" alt="Foto de Tim Berners-Lee(1955)" width="200">
+            </ul>
+            <br>
+            <br>
+            <b><li>Marc Andreessen(1971)</li></b>
+            <br>
+            <ul>
+                <li>Reiventou o navegador: Netscape (90% da internet da época);</li>
+            <li>Proporcionou recursos multimedia para a internet;</li>
+                <br>
+                <img src="https://blogs-images.forbes.com/anthonykosner/files/2012/04/10712v2-max-450x450.png" alt="Foto de Marc Andreessen(1971)" width="200">
+            </ul>
+            <br>
+            <br>
+            <b><li>Bill Gates(1955)</li></b>
+            <br>
+            <ul>
+                <li>Fundados da Microsoft;</li>
+                <li>Criou o Internet Explorer(substituiu o Netscape);</li>
+                <br>
+                <img src="https://th.bing.com/th/id/OIP.ffiBrvtwBS3Fn1PYQjLpqgHaFj?pid=ImgDet&rs=1" alt="Foto de Bill Gates(1955)" width="250">
+            </ul>
+            <br>
+            <br>
+            <b><li>Steve Jobs(1955)</li></b>
+            <br>
+            <ul>
+                <li>Fundados da Apple;</li>
+                <li>Introduziu o mouse;</li>
+                <li>Popularizou os smartphone(2007);</li>
+                <br>
+                <img src="https://th.bing.com/th/id/OIP.BwynLPcPYvfAOjamc1sgKQHaFj?pid=ImgDet&rs=1" alt="Foto de Marc Andreessen(1971)" width="250">
+            </ul>
         </ol>
-        <br>
-        <u>Exemplos Servidor Web:</u>
-        <ol>
-            <li>Apoche;</li>
-            <li>NGINX;</li>
-        </ol>
-    </blockquote>
-    <p>
-        Os conhecimentos sobre esse assunto é importante para saber a melhor opção para cada situação no que diz respeito a hospedagens de sites.  Qual o melhor servidor? Quanta memória de processamento é necessária? Assim por diante.
-    </p>
-    <br>
-    <h3>Tipos de servidores</h3>
-    <ol>
-        <b><li>Servidor Proxy</li></b>
-        <p>
-            Esse é o servidor que intermedia a comunicação de alguns clientes, de uma empresa por exemplo, com o servidor da internet. A requisção e a resposta da requisição passa por esse computador. Esses dispositivos são utilizados quando a empresa quer restringir o acesso dos colaboradores à alguns sites.
-        </p>
-        <img src="https://networkencyclopedia.com/wp-content/uploads/2019/08/proxy-server.png" width="300" alt="Diagrama de onde o server proxy se encaixa na comunicação web">
-        <br><br><br><br>
-        <b><li>Firewall</li></b>
-        <p>
-            Em relação à sua posição na conexão com a rede, ele atua igual o Proxy, contudo, sua utilização é voltada a impedir o acesso malicioso ou suspeito ao servidor, fornecendo segurança ao mesmo.
-        </p>
-        <img src="https://th.bing.com/th/id/OIP.wuyPCZJmHBaDP_whF0XUVgHaEA?pid=ImgDet&rs=1" width="300" alt="Diagrama de onde o server firewall se encaixa na comunicação web" >
-        <br><br><br><br>
-        <b><li>Web Server</li></b>
-        <p>
-            É o servidor que recebe e responde as requisições do clientes na rede na internet.
-        </p>
-        <img src="https://th.bing.com/th/id/OIP.qmtFEpZIszikMklSbKo_HwHaFj?pid=ImgDet&rs=1" width="400" alt="Diagrama de onde o server firewall se encaixa na comunicação web" >
-        <b><li>Email Server</li></b>
-        <p>
-            Esse é o servidor que armazena os emails enviados e faz o controle do envio.
-        </p>
-        <br><br>
-        <b><li>DataBase server</li></b>
-        <p>
-            Esse servidor pode estar presente na internet ou numa intranet(rede privada), mas sua função é a mesma, armazernar dados,  a título de exemplo, cita-se os dados de sites de cadastro. Quem acessa esse servidor é o web server, quando necessário.
-        </p>
-        <img src="https://th.bing.com/th/id/OIP._uInflUgkbu3m2hSHprxiQHaDE?pid=ImgDet&rs=1"width="400" alt="Arquitetura com servidor database">
-        <br><br><br><br>
-        <b><li>DNS(domain name service)</li></b>
-        <p>
-            Esses servidores são responsáveis por reconhecer quais números IP(Internet Protocol) o domínio do site digitado pelo client se refere. Isso acontece, porque cada site na rede internet é identificado por uma sequência de números(IP), que entre outras coisas, aponta qual servidor ele está hospedado. Para facilitar a navegação do usuário, os sites são acessados pelo client através dos domínios(url) no lugar esse código. Assim , no momento em que acontece a requisição do site, para buscar seu conteúdo no servidor, o DNS faz a tradução da URL para o IP para que ele seja localizado no server web que está hospedado. 
-        </p>  
-    </ol>
+    </section>
     <hr>
-
-    <h2 id="host">Hospedagem de sites</h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <p>
-        Para que os usuários possam acessar um site pela internet, é preciso fazer o processo de <b>Hospedagem do Site</b>, que é a ação de "colocar" num servidor web todos os arquivos do seu site para que ele possa fornecê-lo aos clients que fizerem a requisição. Segue um algoritmo do processo:
-    </p>
-    <ol>
-        <b><li>Escolher e Comprar um domínio</li></b>
+    <section>
+        <h2 id="clients">Clients (ou Clientes):</h2>
+        <small><a href="#index">(Voltar)</a></small>
         <p>
-            O domínio é o nome do site,muito reconhecido pela estrutura <u>dominio.com</u> ou <u>dominio.com.br</u>. Quando o domínio possui o <i>.br</i> significa que ele é hospedado no Brasil, no site <a href="https://registro.br/" title="clique aqui para acessar o site" target="_blank">registro.br</a>.
+            Os clientes são as máquinas consomem informação ao se concectar com outro computador, no contexto da Web, esse outro computador é o servidor da rede. Esse servidor vai enviar aos Clients arquivos do tipo HTML, CSS, JS e imagens.
         </p>
         <blockquote>
-            Antes de prosseguir, é importante distinguir a URL do dominio. A Url, é um conjunto de palavras que aponta todo o caminho para uma página específica da web. Enquanto o domínio aponta para "a porta de entrada" do site  (Página Inicial), a URL levará a um "quarto" específico, por exemplo, alguma das outras páginas dentro do site.
-            <br>
-            <br>
-            <img src="https://lh3.googleusercontent.com/pvTLX-M7DlkcHgLt_13J3uuHpd3-kKpZSlHFrhQiszLtn_f03GjDtH13lD1whzfLvVeDiEogt3QAwmDbBtTrtLaTO08fSQc40nUrxYYzrmrkIVUR2GukPglzxMchKvsHmksxJTTMwGhr6N4gMg" alt="Parte que compõe a URL" width="500" >
+            As máquinas dos clientes pode variar entre <i>desktop, laptop,mobile phone, tablets, smartwatches,</i> e entre outros, que se dividem em dispositivos desktop, ou seja, <b>não portáteis</b>, e <b>dispositivos móveis</b>, os portáteis, aqueles que vem sido utilizados cada vez mais nos dias de hoje.
+        </blockquote>
+        <img src="https://indiafreenotes.com/wp-content/uploads/2020/04/Topic-2-Client-Server-Computing.png" alt="Diagrama de como funciona a comunicação entre client e server pela internet" width="500">
+        <br><small>Comunicação entre client e server pela internet</small>
+        <br>
+        <br>
+        <h3>Browser(ou Navegador)</h3>
+        <p>
+            Os navegadores são programas instalados no dispositivo do <i>client </i>que interpreta os <u>arquivos recebido do servidor web</u>. Embora todos obedecam o padrão WWW, cada um deles tem sua particularidade na interpretação e no suporte de alguns recursos.
+        </p>
+        <img src="https://4.bp.blogspot.com/-1NTACcH7wEE/UYw-ey-6WUI/AAAAAAAAo6I/UoQMVWp7quo/w1200-h630-p-k-no-nu/navegadores.png" alt="Exemplo de browser/navegadores" width="200">
+        <br><small>Exemplo de browser/navegadores</small>
+        <br>
+        <br>
+        <h3>Aplicação Web</h3>
+        <p>
+            Aplicação Web são soluções que possuem a <u>internet como meio de comunicação</u> entre Client e Server, <u>não sendo necessário a sua instalação no computador</u>
+        </p>
+        <blockquote>
+            Em outras palavras, aplicação web é o website, enquanto os aplicativos, são uma solução que necessita instalação.
         </blockquote>
         <p>
-            Para comprá-lo é preciso visitar o site de uma plataforma que comercializa domínios, verificar se a opção de nome escolhido está disponível e escolher o plano. Alguns dados são requiridos, como o DNS, que é fornecido pela provedor de hospedagem. Caso não esteja disponível ainda, esse dado pode ser alterado  depois pelo mesmo site.
+            Os conhecimentos e a programação para aplicação web é esencialmente diferente do desenvolvimento de aplicativos. Assim sendo, aidna que as informações contida num site e num app sejam as mesmas, ambas as estruturas tem particularidades entre si. 
         </p>
-        <br>
-        <b><li>Contratar serviço de hospedagem</li></b>
+    </section>
+    <hr>
+    <section>
+        <h2 id="server">Server(ou Servidor) </h2>
+        <small><a href="#index">(Voltar)</a></small>
         <p>
-            Para prosseguir nessa etapa é necessário escolher uma plataforma que forneça esse serviço, entrar no site, escolher um plano e fornecer os dados requiridos.
+            Os server são computadores que se comportam como máquina central de uma rede, seja ela a internet, ou uma intranet. Eles vão desde computadores simples, até os grandes DataCenters da google ou do facebook.
+            <img src="" alt="">
         </p>
         <br>
-        <b><li>Fazer o upgrade dos arquivos do site para o servidor:</li></b>
+        <h3>Hardware e Software dos Servidores</h3>
         <p>
-            É necessário baixar o programa que realiza o FTP (File Transfer Protocol), isto é a conexão para enviar os arquivos ao servidor. Parar tanto, pode-se utilizar de programas como o <a href="https://filezilla-project.org/" target="_blank" title="clique aqui para acessa o site">Filezila</a>. Ao conectar-se, é só enviar(ou atualizar) os arquivos ao servidor
+            Assim como os computadores que conhecemos, os servidores possuem a parte lógica (Software) e parte física(hardware). A primeira parte é responsável pelos sistemas operacionais, monitoramento e servidores Web, enquanto a segunda, se trata do armazenamento, memória e processamento, sendo que esse precisa ser compatível com as grandes demanda que um servidor tem.
         </p>
-    </ol>
-    <br>
-    <hr>
-    <br>
-
-    <h2 id="lingProg">Linguagens de Programação</h2>    
-    <small><a href="#index">(Voltar)</a></small>
-    <p>
-        As linguagens de programação são um conjunto de instruções lógicas que determinam atividades para o computador realizar. São elas que possibilitam o Software.
-    </p>
-    <br>
-    <h3>Client-side x Server-side </h3>
-    <p>
-        As linguagens que operam no <strong>Client-Side</strong> são aquelas que se comunicam com a máquina do cliente(ou usuário). Dessa forma, quem as interpreta é o browser.  São exemplos delas:
-    </p>
-    <ul>
-        <li>HTML;</li>
-        <li>Js;</li>
-        <li>Css.</li>
-    </ul>
-    <p>
-        Já as linguagens do <strong>Server-Side</strong>, elas são as que o servidor vai ler e executar.  São exemplos delas:
-    </p>
-    <ul>
-        <li>Php;</li>
-        <li>Js;</li>
-        <li>Java;</li>
-        <li>Ruby;</li>
-        <li>C#.</li>
-    </ul>
-    <p>
-        A linguagem <i>JavaScript</i>, por outro lado, é uma linguagem que opera nos dois lados, pois possui um interpretador e executador  específico que é o <strong>V8</strong> . Ele foi anexado nos navegadores, e através de <a href="https://nodejs.org/en/about" target="_blank" title="clique aqui para acessa o site" >Node.Js</a>(ambiente de execução do JavaScript), o V8 pode ser acessado pelos Severs também, possibilitando essa dupla atuação.
-    </p>
-    <br>
-    <h3>HTML <del>é uma</del> <ins>não é uma</ins> linguagem de programação</h3>
-    <p>
-        Não! O <abbr title="HyperText Markup Language">HTML</abbr> (Linguagem de marcação de texto e hyperlink), é uma linguagem de marcação de texto. É como se enviássemos uma mensagem em texto, e precisássemos dar orientação do que cada coisa escrita é, como o título, o parágrafo. Para tanto, o html faz uso das tags.
-    </p>
-    <img src="./Img/code.png" alt="Exemplo de um código HTML utilizando tags h1, h2, p, e img" width="500">
-    <br><br>
-    <hr>
-    <br>
-
-    <h1 id="htmlPratica">Introdução ao HTML na prática: conceitos</h1>
-    <small><a href="#index">(Voltar)</a></small>
-    <h3>Estruturação básica do Código</h3>
-    <p>Um código HTML possui uma estrutura básica, que representa 3 secções marcadas por determinadas tags.</p>
-    <ul>
-        <li><b>Tag HTML:</b> Essa tag delimita o começo e o fim do código em HTML.</li>
-        <li><b>Tag head:</b> Do português 'cabeça', representa a parte do código que carrega antes de acontecer qualquer exibição na tela no usuário.</li>
-        <li><b>Tag body:</b> É a secção que contém o código que aparece para o usuário.</li>
-    </ul>
-    <p>Segue uma demonstração. O conteúdo em azul são as tags, e o verde é o comentário do programa, isto é, conteúdo que o programador insere para auxiliar a compreensão do código, mas que não é lido pelo computador:</p>
-    <img src="./Img/codeEstrutura.png" alt="Demonstração das tags num código" width="500">
-    <br><br><br>
-    <h3>Tags HTML</h3>
-    <p>
-        As tags são os marcadores que vão fazer o processo de identificação do conteúdo do código. Por exemplo, se quando o browser for interpretar o código ele encontrar a tag "h1", ele vai entender que aquele conteúdo é um título. 
-    </p>
-    <p>
-        Na maior parte das vezes, uma tag tem duas parte: a tag de abertura e a tag de fechamento. Ambas começam com o sinal "<" (menor que), possuiem o nome da tag, e terminam com o sinal ">"(maior que). Contudo, a tag de fim possue uma barra "/" antes do caracter ">". 
-        Exemplo:
-    </p>
-    <img src="./Img/codeEstruturaTags.png" alt="Estrutura das Tags HTML" width="200">
-    <p>
-        Todavia, há exceções, que é o caso das tags únicas, que tem a estrutura de uma tag de abertura,ou seja, sem a barra. Exemplo: 
-    </p>
-    <img src="./Img/codeEstruturaTagsExceções.png" alt="Exemplo da estrutura de tags única"  width="200">
-    <br>
-    <br>
-    <h3>Elementos HTML</h3>
-    <p>
-        Um elemento html é a fusão de: 
-    </p>
-    <blockquote>
-        tag de abertura + conteúdo + tag de Fechamento
-    </blockquote>
-    <br>
-    <br>
-    <h3>Atributos</h3>
-    <p>
-        Os atributos são propriedades que as tags tem. Cada tag terá seu grupo de atributos compatível, mas existem três atributos que são padrão: "id", "style" e "class".Uma mesma tag pode ter um ou todos esses.
-    </p>
-    <p>
-        O <strong>Id</strong> é um identificador de um elemento. Através dele podemos controlar a tag que tem essa identidade via JavaScript, por exemplo. 
-    </p>
-    <img src="./Img/exemploIdBtncode.png" width="300" alt="Exemplo de uma tag com o atributo Id">
-    <p>
-        A class <strong>Class</strong> serve para padronização, pois todos os elementos que possuem uma mesma classe receberão um mesmo grupo de característiccas, que são definidas via CSS (uma ferramenta de comandos de estilização de páginas HTML).
-    </p>
-    <img src="./Img/exemploClasscode.png" width="300" alt="Exemplo de uma tag com o atributo Class">
-    <p>
-        E o atributo <strong>Style</strong> é a possibilitade de estilizar um elemento(cor, tamanho, posição, etc). Dessa forma, realiza-se a função do CSS direto no HTML. Contudo, a título de boa prática, normalmente, prefere-se realizar a estilização CSS num arquivo a parte.  
-    </p>
-    <img src="./Img/exemploStyle.png" width="300" alt="Exemplo de uma tag com o atributo style">
-    <br>
-    <hr>
-
-    <h1 id="TagsTexto">Exemplo de Tags</h1>
-    <small><a href="#index">(Voltar)</a></small>
-
-    <h3>Tags de Texto</h3>
-    <p>
-        As tags de texto são as tags que exercem alguma função de marcação no conteúdo textual da página HTML.
-        Elas são:
-    </p>
-    <ol>
-        <li>
-            <b>Tags header:</b>
-            <p>Estas são tags que definem títulos e eles variam de h1 a h6. Desse modo, elas possuem um tamanho maior que o parágrafo e são automaticamente exibidas em negrito.</p>
-            <img src="https://www.seoptimer.com/blog/wp-content/uploads/2018/09/header-tags-min.png" width="300" alt="Exemplo tags Header">
-            <img src="./Img/exemploHeadercodeo.png" width="300" alt="Código com as tags ">
-        </li>
-        <br><br>
-        <li>
-            <b>Tag parágrafo:</b>
+        <p>
+            Em aplicações web, quando o client/cliente acessa um site ele faz uma requisição ao servidor. Quando o server recebe essa mensagem via internet, é o sistema operacional que vai recebê-la e ao identificá-la,ele busca no servidor Web o fornecimento dos arquivos do site (html, css, js, etc).Assim que ele feito a comunicação, o sistema operacional manda para o client o pedido que ele fez.
+        </p>
+        <blockquote>
+            <u>Exemplos Sistemas Operacionais:</u>
+            <ol>
+                <li>Window Server;</li>
+                <li>Oracle;</li>
+            </ol>
+            <br>
+            <u>Exemplos Servidor Web:</u>
+            <ol>
+                <li>Apoche;</li>
+                <li>NGINX;</li>
+            </ol>
+        </blockquote>
+        <p>
+            Os conhecimentos sobre esse assunto é importante para saber a melhor opção para cada situação no que diz respeito a hospedagens de sites.  Qual o melhor servidor? Quanta memória de processamento é necessária? Assim por diante.
+        </p>
+        <br>
+        <h3>Tipos de servidores</h3>
+        <ol>
+            <b><li>Servidor Proxy</li></b>
             <p>
-                Esta tag delimita o início e o fim de um parágrafo.
+                Esse é o servidor que intermedia a comunicação de alguns clientes, de uma empresa por exemplo, com o servidor da internet. A requisção e a resposta da requisição passa por esse computador. Esses dispositivos são utilizados quando a empresa quer restringir o acesso dos colaboradores à alguns sites.
             </p>
-            <img src="./Img/exemploParagrafo.png" alt="Código com a tag parágrafo" width="400">
-            <img src="./Img/exemploTagP.png" alt="Renderização da tag parágrafo" width="400">
-        </li>
-        <br><br>
-        <li>
-            <b>Tag blockquote</b>
+            <img src="https://networkencyclopedia.com/wp-content/uploads/2019/08/proxy-server.png" width="300" alt="Diagrama de onde o server proxy se encaixa na comunicação web">
+            <br><br><br><br>
+            <b><li>Firewall</li></b>
             <p>
-                Com essa tag pode-se realizar o destaque de uma parte do texto ao deixá-lo mais distante que os outros da margem. Utiliza-se essa função para fazer citações ou explicações que não se quer manter no parágrafo.
+                Em relação à sua posição na conexão com a rede, ele atua igual o Proxy, contudo, sua utilização é voltada a impedir o acesso malicioso ou suspeito ao servidor, fornecendo segurança ao mesmo.
             </p>
-            <img src="./Img/exemploBQcodeo.png" alt="Código com a tag blockquote" width="400">
-            <img src="./Img/tagBlockQuote.png" alt="Renderização da tag blockquote" width="400">
-        </li>
-        <br><br>
-        <li>
-            <b>Tags de destaque</b>
+            <img src="https://th.bing.com/th/id/OIP.wuyPCZJmHBaDP_whF0XUVgHaEA?pid=ImgDet&rs=1" width="300" alt="Diagrama de onde o server firewall se encaixa na comunicação web" >
+            <br><br><br><br>
+            <b><li>Web Server</li></b>
+            <p>
+                É o servidor que recebe e responde as requisições do clientes na rede na internet.
+            </p>
+            <img src="https://th.bing.com/th/id/OIP.qmtFEpZIszikMklSbKo_HwHaFj?pid=ImgDet&rs=1" width="400" alt="Diagrama de onde o server firewall se encaixa na comunicação web" >
+            <b><li>Email Server</li></b>
+            <p>
+                Esse é o servidor que armazena os emails enviados e faz o controle do envio.
+            </p>
             <br><br>
-            <ul>
-                <li>
-                    Negrito
-                    <br><br>
-                    <img src="./Img/./exemploStrongcodeo.png" alt="Código com a tag strong" width="360">
-                    <img src="./Img/TagStrong.png" alt="Renderização da tag strong" width="300">
-                </li>
+            <b><li>DataBase server</li></b>
+            <p>
+                Esse servidor pode estar presente na internet ou numa intranet(rede privada), mas sua função é a mesma, armazernar dados,  a título de exemplo, cita-se os dados de sites de cadastro. Quem acessa esse servidor é o web server, quando necessário.
+            </p>
+            <img src="https://th.bing.com/th/id/OIP._uInflUgkbu3m2hSHprxiQHaDE?pid=ImgDet&rs=1"width="400" alt="Arquitetura com servidor database">
+            <br><br><br><br>
+            <b><li>DNS(domain name service)</li></b>
+            <p>
+                Esses servidores são responsáveis por reconhecer quais números IP(Internet Protocol) o domínio do site digitado pelo client se refere. Isso acontece, porque cada site na rede internet é identificado por uma sequência de números(IP), que entre outras coisas, aponta qual servidor ele está hospedado. Para facilitar a navegação do usuário, os sites são acessados pelo client através dos domínios(url) no lugar esse código. Assim , no momento em que acontece a requisição do site, para buscar seu conteúdo no servidor, o DNS faz a tradução da URL para o IP para que ele seja localizado no server web que está hospedado. 
+            </p>  
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <h2 id="host">Hospedagem de sites</h2>
+        <small><a href="#index">(Voltar)</a></small>
+        <p>
+            Para que os usuários possam acessar um site pela internet, é preciso fazer o processo de <b>Hospedagem do Site</b>, que é a ação de "colocar" num servidor web todos os arquivos do seu site para que ele possa fornecê-lo aos clients que fizerem a requisição. Segue um algoritmo do processo:
+        </p>
+        <ol>
+            <b><li>Escolher e Comprar um domínio</li></b>
+            <p>
+                O domínio é o nome do site,muito reconhecido pela estrutura <u>dominio.com</u> ou <u>dominio.com.br</u>. Quando o domínio possui o <i>.br</i> significa que ele é hospedado no Brasil, no site <a href="https://registro.br/" title="clique aqui para acessar o site" target="_blank">registro.br</a>.
+            </p>
+            <blockquote>
+                Antes de prosseguir, é importante distinguir a URL do dominio. A Url, é um conjunto de palavras que aponta todo o caminho para uma página específica da web. Enquanto o domínio aponta para "a porta de entrada" do site  (Página Inicial), a URL levará a um "quarto" específico, por exemplo, alguma das outras páginas dentro do site.
                 <br>
-                <li>
-                    Itálico
-                    <br><br>
-                    <img src="./Img/intalicoCode.png" alt="Código com a tag Itálico" width="360">
-                    <img src="./Img/tagIntalico.png" alt="Renderização da tag Itálico" width="250">
-                </li>
                 <br>
-                <li>
-                    Sublinhado
-                    <br><br>
-                    <img src="./Img/underlineCode.png" alt="Código com a tag Sublinhado" width="360">
-                    <img src="./Img/tagSublinhado.png" alt="Renderização da tag Sublinhado" width="250">
-                </li>
-                <br>
-                <li>
-                    Marcador de Texto
-                    <br><br>
-                    <img src="./Img/markCode.png" alt="Código com a tag Marcador de Texto" width="360">
-                    <img src="./Img/Markexemplo.png" alt="Renderização da tag Marcador de Texto" width="150">
-                </li>
-            </ul>
-            <img src="" alt="" width="400">
-            <img src="" alt="" width="250">
-        </li>
+                <img src="https://lh3.googleusercontent.com/pvTLX-M7DlkcHgLt_13J3uuHpd3-kKpZSlHFrhQiszLtn_f03GjDtH13lD1whzfLvVeDiEogt3QAwmDbBtTrtLaTO08fSQc40nUrxYYzrmrkIVUR2GukPglzxMchKvsHmksxJTTMwGhr6N4gMg" alt="Parte que compõe a URL" width="500" >
+            </blockquote>
+            <p>
+                Para comprá-lo é preciso visitar o site de uma plataforma que comercializa domínios, verificar se a opção de nome escolhido está disponível e escolher o plano. Alguns dados são requiridos, como o DNS, que é fornecido pela provedor de hospedagem. Caso não esteja disponível ainda, esse dado pode ser alterado  depois pelo mesmo site.
+            </p>
+            <br>
+            <b><li>Contratar serviço de hospedagem</li></b>
+            <p>
+                Para prosseguir nessa etapa é necessário escolher uma plataforma que forneça esse serviço, entrar no site, escolher um plano e fornecer os dados requiridos.
+            </p>
+            <br>
+            <b><li>Fazer o upgrade dos arquivos do site para o servidor:</li></b>
+            <p>
+                É necessário baixar o programa que realiza o FTP (File Transfer Protocol), isto é a conexão para enviar os arquivos ao servidor. Parar tanto, pode-se utilizar de programas como o <a href="https://filezilla-project.org/" target="_blank" title="clique aqui para acessa o site">Filezila</a>. Ao conectar-se, é só enviar(ou atualizar) os arquivos ao servidor
+            </p>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <h2 id="lingProg">Linguagens de Programação</h2>    
+        <small><a href="#index">(Voltar)</a></small>
+        <p>
+            As linguagens de programação são um conjunto de instruções lógicas que determinam atividades para o computador realizar. São elas que possibilitam o Software.
+        </p>
         <br>
-        <li>
-            <b>Tags de inscrição superior e inferior</b>
+        <h3>Client-side x Server-side </h3>
+        <p>
+            As linguagens que operam no <strong>Client-Side</strong> são aquelas que se comunicam com a máquina do cliente(ou usuário). Dessa forma, quem as interpreta é o browser.  São exemplos delas:
+        </p>
+        <ul>
+            <li>HTML;</li>
+            <li>Js;</li>
+            <li>Css.</li>
+        </ul>
+        <p>
+            Já as linguagens do <strong>Server-Side</strong>, elas são as que o servidor vai ler e executar.  São exemplos delas:
+        </p>
+        <ul>
+            <li>Php;</li>
+            <li>Js;</li>
+            <li>Java;</li>
+            <li>Ruby;</li>
+            <li>C#.</li>
+        </ul>
+        <p>
+            A linguagem <i>JavaScript</i>, por outro lado, é uma linguagem que opera nos dois lados, pois possui um interpretador e executador  específico que é o <strong>V8</strong> . Ele foi anexado nos navegadores, e através de <a href="https://nodejs.org/en/about" target="_blank" title="clique aqui para acessa o site" >Node.Js</a>(ambiente de execução do JavaScript), o V8 pode ser acessado pelos Severs também, possibilitando essa dupla atuação.
+        </p>
+        <br>
+        <h3>HTML <del>é uma</del> <ins>não é uma</ins> linguagem de programação</h3>
+        <p>
+            Não! O <abbr title="HyperText Markup Language">HTML</abbr> (Linguagem de marcação de texto e hyperlink), é uma linguagem de marcação de texto. É como se enviássemos uma mensagem em texto, e precisássemos dar orientação do que cada coisa escrita é, como o título, o parágrafo. Para tanto, o html faz uso das tags.
+        </p>
+        <img src="./Img/code.png" alt="Exemplo de um código HTML utilizando tags h1, h2, p, e img" width="500">
+    </section>
+    <hr>
+    <section>
+        <h1 id="htmlPratica">Introdução ao HTML na prática: conceitos</h1>
+        <small><a href="#index">(Voltar)</a></small>
+        <h3>Estruturação básica do Código</h3>
+        <p>Um código HTML possui uma estrutura básica, que representa 3 secções marcadas por determinadas tags.</p>
+        <ul>
+            <li><b>Tag HTML:</b> Essa tag delimita o começo e o fim do código em HTML.</li>
+            <li><b>Tag head:</b> Do português 'cabeça', representa a parte do código que carrega antes de acontecer qualquer exibição na tela no usuário.</li>
+            <li><b>Tag body:</b> É a secção que contém o código que aparece para o usuário.</li>
+        </ul>
+        <p>Segue uma demonstração. O conteúdo em azul são as tags, e o verde é o comentário do programa, isto é, conteúdo que o programador insere para auxiliar a compreensão do código, mas que não é lido pelo computador:</p>
+        <img src="./Img/codeEstrutura.png" alt="Demonstração das tags num código" width="500">
+        <br><br><br>
+        <h3>Tags HTML</h3>
+        <p>
+            As tags são os marcadores que vão fazer o processo de identificação do conteúdo do código. Por exemplo, se quando o browser for interpretar o código ele encontrar a tag "h1", ele vai entender que aquele conteúdo é um título. 
+        </p>
+        <p>
+            Na maior parte das vezes, uma tag tem duas parte: a tag de abertura e a tag de fechamento. Ambas começam com o sinal "<" (menor que), possuiem o nome da tag, e terminam com o sinal ">"(maior que). Contudo, a tag de fim possue uma barra "/" antes do caracter ">". 
+            Exemplo:
+        </p>
+        <img src="./Img/codeEstruturaTags.png" alt="Estrutura das Tags HTML" width="200">
+        <p>
+            Todavia, há exceções, que é o caso das tags únicas, que tem a estrutura de uma tag de abertura,ou seja, sem a barra. Exemplo: 
+        </p>
+        <img src="./Img/codeEstruturaTagsExceções.png" alt="Exemplo da estrutura de tags única"  width="200">
+        <br>
+        <br>
+        <h3>Elementos HTML</h3>
+        <p>
+            Um elemento html é a fusão de: 
+        </p>
+        <blockquote>
+            tag de abertura + conteúdo + tag de Fechamento
+        </blockquote>
+        <br>
+        <br>
+        <h3>Atributos</h3>
+        <p>
+            Os atributos são propriedades que as tags tem. Cada tag terá seu grupo de atributos compatível, mas existem três atributos que são padrão: "id", "style" e "class".Uma mesma tag pode ter um ou todos esses.
+        </p>
+        <p>
+            O <strong>Id</strong> é um identificador de um elemento. Através dele podemos controlar a tag que tem essa identidade via JavaScript, por exemplo. 
+        </p>
+        <img src="./Img/exemploIdBtncode.png" width="300" alt="Exemplo de uma tag com o atributo Id">
+        <p>
+            A class <strong>Class</strong> serve para padronização, pois todos os elementos que possuem uma mesma classe receberão um mesmo grupo de característiccas, que são definidas via CSS (uma ferramenta de comandos de estilização de páginas HTML).
+        </p>
+        <img src="./Img/exemploClasscode.png" width="300" alt="Exemplo de uma tag com o atributo Class">
+        <p>
+            E o atributo <strong>Style</strong> é a possibilitade de estilizar um elemento(cor, tamanho, posição, etc). Dessa forma, realiza-se a função do CSS direto no HTML. Contudo, a título de boa prática, normalmente, prefere-se realizar a estilização CSS num arquivo a parte.  
+        </p>
+        <img src="./Img/exemploStyle.png" width="300" alt="Exemplo de uma tag com o atributo style">
+        <br>
+    </section>
+    <hr>
+    <section>
+        <h1 id="TagsTexto">Exemplo de Tags</h1>
+        <small><a href="#index">(Voltar)</a></small>
+
+        <h3>Tags de Texto</h3>
+        <p>
+            As tags de texto são as tags que exercem alguma função de marcação no conteúdo textual da página HTML.
+            Elas são:
+        </p>
+        <ol>
+            <li>
+                <b>Tags header:</b>
+                <p>Estas são tags que definem títulos e eles variam de h1 a h6. Desse modo, elas possuem um tamanho maior que o parágrafo e são automaticamente exibidas em negrito.</p>
+                <img src="https://www.seoptimer.com/blog/wp-content/uploads/2018/09/header-tags-min.png" width="300" alt="Exemplo tags Header">
+                <img src="./Img/exemploHeadercodeo.png" width="300" alt="Código com as tags ">
+            </li>
             <br><br>
-            <img src="./Img/Sub e Sup incrito.png" width="100"><br><br>
-            <ul>
-                <li>
-                    Inscrição superior 
-                    <br><br>
-                    <img src="./Img/supCode.png" alt="Código com a tag sup" width="200">
-                </li>
-                <br>
-                <li>
-                    Inscrição inferior
-                    <br><br>
-                    <img src="./Img/subCode.png" alt="Código com a tag sub" width="200">
-                </li>
-            </ul>
-        </li>
-        <br>
-        <br>
-        <li>
-            <b>Linha Horizontal</b>
+            <li>
+                <b>Tag parágrafo:</b>
+                <p>
+                    Esta tag delimita o início e o fim de um parágrafo.
+                </p>
+                <img src="./Img/exemploParagrafo.png" alt="Código com a tag parágrafo" width="400">
+                <img src="./Img/exemploTagP.png" alt="Renderização da tag parágrafo" width="400">
+            </li>
             <br><br>
-            <img src="./Img/hrCode.png" width="150">
-            <img src="./Img/hrExmplo.png" width="500"><br><br>   
-        </li>
-    </ol>
-    <br>
-    <hr>
-    <h3 id="TagsListas">Tags de Lista</h3>
-    <small><a href="#index">(Voltar)</a></small>
-    <p>
-        São tags utilizadas para realizar áreas dedicadas à lista. Existem dois tipos de tags de listas, e ambas possuem a tag "pai", que  delimita a lista, e a tag "filha", que aponta os itens.
-        A primeira pode variar, mas a segunda será sempre </ li > .
-    </p>
-    <img src="./Img/Exmplo listas.png" alt="Exemplo de listas HTML" width="200">
-    <p>Tipos:</p>
-    <ul>
-        <li>
-            <b>Lista Ordenada</b>
-            <p>Como o próprio nome diz, essa é uma lista em que os itens são organizados numa sequência numérica.</p>
-            <img src="./Img/listaOL.png" alt="" width="300">
-        </li>
+            <li>
+                <b>Tag blockquote</b>
+                <p>
+                    Com essa tag pode-se realizar o destaque de uma parte do texto ao deixá-lo mais distante que os outros da margem. Utiliza-se essa função para fazer citações ou explicações que não se quer manter no parágrafo.
+                </p>
+                <img src="./Img/exemploBQcodeo.png" alt="Código com a tag blockquote" width="400">
+                <img src="./Img/tagBlockQuote.png" alt="Renderização da tag blockquote" width="400">
+            </li>
+            <br><br>
+            <li>
+                <b>Tags de destaque</b>
+                <br><br>
+                <ul>
+                    <li>
+                        Negrito
+                        <br><br>
+                        <img src="./Img/./exemploStrongcodeo.png" alt="Código com a tag strong" width="360">
+                        <img src="./Img/TagStrong.png" alt="Renderização da tag strong" width="300">
+                    </li>
+                    <br>
+                    <li>
+                        Itálico
+                        <br><br>
+                        <img src="./Img/intalicoCode.png" alt="Código com a tag Itálico" width="360">
+                        <img src="./Img/tagIntalico.png" alt="Renderização da tag Itálico" width="250">
+                    </li>
+                    <br>
+                    <li>
+                        Sublinhado
+                        <br><br>
+                        <img src="./Img/underlineCode.png" alt="Código com a tag Sublinhado" width="360">
+                        <img src="./Img/tagSublinhado.png" alt="Renderização da tag Sublinhado" width="250">
+                    </li>
+                    <br>
+                    <li>
+                        Marcador de Texto
+                        <br><br>
+                        <img src="./Img/markCode.png" alt="Código com a tag Marcador de Texto" width="360">
+                        <img src="./Img/Markexemplo.png" alt="Renderização da tag Marcador de Texto" width="150">
+                    </li>
+                </ul>
+                <img src="" alt="" width="400">
+                <img src="" alt="" width="250">
+            </li>
+            <br>
+            <li>
+                <b>Tags de inscrição superior e inferior</b>
+                <br><br>
+                <img src="./Img/Sub e Sup incrito.png" width="100"><br><br>
+                <ul>
+                    <li>
+                        Inscrição superior 
+                        <br><br>
+                        <img src="./Img/supCode.png" alt="Código com a tag sup" width="200">
+                    </li>
+                    <br>
+                    <li>
+                        Inscrição inferior
+                        <br><br>
+                        <img src="./Img/subCode.png" alt="Código com a tag sub" width="200">
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>Linha Horizontal</b>
+                <br><br>
+                <img src="./Img/hrCode.png" width="150">
+                <img src="./Img/hrExmplo.png" width="500"><br><br>   
+            </li>
+        </ol>
         <br>
-        <li>
-            <b>Lista não Ordenada</b>
-            <p>Essa é uma lista em que os itens não são organizados por numérica, mas por símbolos.</p>
-            <img src="./Img/listaUL.png" alt="" width="300">
-        </li>
-    </ul>
-    <br>
+        <h3 id="TagsListas">Tags de Lista</h3>
+        <small><a href="#index">(Voltar)</a></small>
+        <p>
+            São tags utilizadas para realizar áreas dedicadas à lista. Existem dois tipos de tags de listas, e ambas possuem a tag "pai", que  delimita a lista, e a tag "filha", que aponta os itens.
+            A primeira pode variar, mas a segunda será sempre </ li > .
+        </p>
+        <img src="./Img/Exmplo listas.png" alt="Exemplo de listas HTML" width="200">
+        <p>Tipos:</p>
+        <ul>
+            <li>
+                <b>Lista Ordenada</b>
+                <p>Como o próprio nome diz, essa é uma lista em que os itens são organizados numa sequência numérica.</p>
+                <img src="./Img/listaOL.png" alt="" width="300">
+            </li>
+            <br>
+            <li>
+                <b>Lista não Ordenada</b>
+                <p>Essa é uma lista em que os itens não são organizados por numérica, mas por símbolos.</p>
+                <img src="./Img/listaUL.png" alt="" width="300">
+            </li>
+        </ul>
+        <br>
+        <h3 id="TagsAncoragem">Tag de Navegação e Ancoragem </h3>
+        <small><a href="#index">(Voltar)</a></small>
+        <p>
+            As tags de ancoragem permitem agregar navegação para o site. Através do atributo "href= 'destino'", podemos direcionar o usuário para um outro site ou outra parte do nosso site. O que difere essas duas ações é a sintaxe do código, quando insere-se um "#" na frente do destino, o navegador entede que permanecerá na mesma página, apenas levará à outra secção.
+        </p>
+        <br>
+        <img src="./Img/ancoragem.png" alt="Código de ancoragem" width="500">
+        <h3>Atributos da tag < a ></h3>
+        <ul>
+            <li><u>href</u> : é onde decide-se o destino</li>
+            <li><u>target:</u> decide-se se o destino será aberto em outra guia ("_blank") ou nele mesmo ("_self"), que é o padrão"</li>
+            <li><u>title:</u> define a existência de um balão de diálogo contendo extras informações<a id="exemplo" href="#exemplo"title="Pode estar escrito 'Clique aqui', por exemplo"> Coloque seu cursor aqui para ver</a></li>
+        </ul><br>
+    </section>
     <hr>
-    <h2 id="TagsAncoragem">Tag de Navegação e Ancoragem </h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <p>
-        As tags de ancoragem permitem agregar navegação para o site. Através do atributo "href= 'destino'", podemos direcionar o usuário para um outro site ou outra parte do nosso site. O que difere essas duas ações é a sintaxe do código, quando insere-se um "#" na frente do destino, o navegador entede que permanecerá na mesma página, apenas levará à outra secção.
-    </p>
-    <br>
-    <img src="./Img/ancoragem.png" alt="Código de ancoragem" width="500">
-    <h3>Atributos da tag < a ></h3>
-    <ul>
-        <li><u>href</u> : é onde decide-se o destino</li>
-        <li><u>target:</u> decide-se se o destino será aberto em outra guia ("_blank") ou nele mesmo ("_self"), que é o padrão"</li>
-        <li><u>title:</u> define a existência de um balão de diálogo contendo extras informações<a id="exemplo" href="#exemplo"title="Pode estar escrito 'Clique aqui', por exemplo"> Coloque seu cursor aqui para ver</a></li>
-    </ul><br>
+    <section>
+        <h2 id="tools">Ferramentas do desenvolvedor</h2>
+        <small><a href="#index">(Voltar)</a></small>
+        <ul>
+            <li><strong>IDE:</strong> é a interface de desenvolvimento de um código. Exemplo: <abbr title="Visual studio code">VSCODE</abbr>
+            <li><strong>Extensões:</strong>são ferramentas que instalamos para agregar ao funcionamento da IDE. Exemplo: Live Server no VSCODE</li>
+            <li><strong>Inspetor:</strong> É uma ferramenta dos navegadores aonde você pode estudar um site de terceiro vendo quais tags HTML foram utilizadas, alterando algo (não definitivamente), e vendo as estilizações em CSS.</li>
+        </ul>
+    </section>
     <hr>
-    <h2 id="tools">Ferramentas do desenvolvedor</h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <ul>
-        <li><strong>IDE:</strong> é a interface de desenvolvimento de um código. Exemplo: <abbr title="Visual studio code">VSCODE</abbr>
-        <li><strong>Extensões:</strong>são ferramentas que instalamos para agregar ao funcionamento da IDE. Exemplo: Live Server no VSCODE</li>
-        <li><strong>Inspetor:</strong> É uma ferramenta dos navegadores aonde você pode estudar um site de terceiro vendo quais tags HTML foram utilizadas, alterando algo (não definitivamente), e vendo as estilizações em CSS.</li>
-    </ul>
-    <br>
-    <br>
-    <hr>
-    <h2 id="references">Referências</h2>
-    <small><a href="#index">(Voltar)</a></small>
-    <p><sup>1</sup><a target="_blank" href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/ac583eab-c0fc-41a2-9725-e075c3937044?back=/track/formacao-html-web-developer&tab=undefined&moduleId=undefined">Curso DIO Entendendo comunicação Client x Server</a></p>
-    <p><sup>2</sup><a target="_blank" href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/ac583eab-c0fc-41a2-9725-e075c3937044?back=/track/formacao-html-web-developer&tab=undefined&moduleId=undefined">Curso DIO Introdução ao HTML na prática</a></p>
+    </main>
+    <footer>
+        <h2 id="references">Referências</h2>
+        <small><a href="#index">(Voltar)</a></small>
+        <p><sup>1</sup><a target="_blank" href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/ac583eab-c0fc-41a2-9725-e075c3937044?back=/track/formacao-html-web-developer&tab=undefined&moduleId=undefined">Curso DIO Entendendo comunicação Client x Server</a></p>
+        <p><sup>2</sup><a target="_blank" href="https://web.dio.me/course/introducao-ao-html-na-pratica/learning/ac583eab-c0fc-41a2-9725-e075c3937044?back=/track/formacao-html-web-developer&tab=undefined&moduleId=undefined">Curso DIO Introdução ao HTML na prática</a></p>
+    </footer>
 </body>
 </html>

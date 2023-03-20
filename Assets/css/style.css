@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=IBM+Plex+Serif:ital,wght@1,300&family=Noto+Rashi+Hebrew:wght@300&display=swap');
+body{
+    margin: 0;
+    background-color: rgb(251, 244, 236);
+    font-family: 'Arvo', serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size: larger
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    gap: 60px;
+    margin: 40px;
+}
+a{
+    text-decoration: none;
+    color: rgb(7, 7, 214);
+}
+fieldset{
+    width: 600px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(201,201,201,0.7);
+}
+.lista1{
+    display: flex;
+    justify-content:  center;
+    gap: 50px;
+}
+.apresentacao{
+    width: 490px;
+    text-align: justify;
+    background: rgba(100, 248, 159, 0.484);
+    padding: 15px;
+    border-radius: 10px 0;
+}
+.apresentacao a, main a, footer small a{
+    color: rgb(165, 8, 58);
+}
+nav a, main a, footer a{
+    transition: 0.2s;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(165, 8, 58);
+}
+section{
+    padding: 20px;
+}
+
+footer{
+    margin: 20px;
+}
