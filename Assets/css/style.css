@@ -17,7 +17,7 @@ nav{
 }
 a{
     text-decoration: none;
-    color: rgb(2, 2, 166);
+    color: rgb(131, 146, 1);
 }
 fieldset{
     width: 600px;
@@ -53,6 +53,15 @@ a:hover{
 }
 section{
     padding: 20px;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.figure2{
+    align-items: flex-start;
 }
 footer{
     margin: 20px;
