@@ -1,7 +1,0 @@
-HTML na prática
-
-*Ferramentas para desenvolvimento
-*VSCODE
-*NODEJS
-*INSPETOR
-
