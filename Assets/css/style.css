@@ -34,7 +34,7 @@ fieldset{
     text-align: justify;
     padding: 15px;
     border-radius: 10px 0;
-    background:rgba(249, 185, 214, 0.502);
+    background:rgba(198, 244, 126, 0.502);
     transition: 0.3s;
 }
 .apresentacao:hover{
@@ -53,6 +53,7 @@ a:hover{
 }
 section{
     padding: 20px;
+    text-align: justify;
 }
 figure{
     display: flex;
@@ -62,6 +63,12 @@ figure{
 }
 .figure2{
     align-items: flex-start;
+}
+.figure3{
+    flex-direction: row;
+    align-items: last baseline;
+    gap: 30px;
+    padding-bottom: 5px;
 }
 footer{
     margin: 20px;
