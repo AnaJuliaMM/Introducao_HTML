@@ -1,0 +1,19 @@
+HTML na prática
+
+*Ferramentas para desenvolvimento
+*VSCODE
+*NODEJS
+*INSPETOR
+
+
+
+
+
+*Atributos das tags:
+
+
+
+
+*tags de texto
+*tag de lista
+
